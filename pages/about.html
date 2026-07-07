@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - DNK Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#0084d6',
+              light: '#b1d8ff',
+              dark: '#0075be',
+            },
+            dark: '#0b1517',
+            'dark-secondary': '#182326',
+          },
+          animation: {
+            'float': 'float 6s ease-in-out infinite',
+            'fade-in-up': 'fadeInUp 1s ease-out forwards',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-20px)' },
+            },
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(30px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-white dark:bg-dark font-lato transition-colors duration-500">
+  <div id="nav"></div>
+
+  <div class="about-container overflow-hidden pt-24">
+    <div class="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+      <div
+        class="absolute inset-0 z-0 scale-105 bg-[url('/assets/images/banner-05.jpg')] bg-cover bg-fixed bg-center transition-transform duration-1000">
+      </div>
+      <div class="absolute inset-0 z-[1] bg-gradient-to-b from-black/60 via-black/40 to-transparent"></div>
+      <div class="relative z-10 text-center px-4 animate-fade-in-up">
+        <span class="inline-block text-brand tracking-[0.3em] uppercase text-sm font-bold mb-4 opacity-80">Welcome to
+          DNK</span>
+        <h1 class="text-6xl md:text-8xl font-black text-white tracking-tight leading-none mb-6">
+          The Story <br /> Behind <span class="text-brand">Us</span>
+        </h1>
+        <div class="w-24 h-1 bg-brand mx-auto rounded-full"></div>
+      </div>
+    </div>
+
+    <div class="py-32 bg-white dark:bg-dark relative">
+      <div class="max-w-[88%] mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+          <div class="lg:col-span-7 relative group">
+            <div
+              class="absolute -inset-4 bg-brand/10 dark:bg-brand/5 rounded-2xl transform rotate-3 -z-10 transition-transform group-hover:rotate-0 duration-500">
+            </div>
+            <img src="/assets/images/slide-image-free-img.jpg"
+              class="w-full h-[500px] object-cover rounded-2xl shadow-2xl relative z-10" alt="About Us" />
+            <div class="absolute -bottom-8 -right-8 w-48 h-48 bg-brand rounded-2xl -z-10 hidden lg:block animate-float">
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 space-y-8">
+            <div class="space-y-4">
+              <span class="text-brand font-bold uppercase tracking-widest text-sm">Our Essence</span>
+              <h2 class="text-4xl md:text-5xl font-black dark:text-white leading-tight">Crafting Excellence Since Day
+                One</h2>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400 text-lg leading-relaxed font-light">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+              pulvinar dapibus leo. Nam nec tellus a odio tincidunt auctor a ornare odio.
+            </p>
+            <div class="grid grid-cols-2 gap-8 py-4 border-t border-gray-100 dark:border-gray-800">
+              <div>
+                <h4 class="text-3xl font-black text-brand">15+</h4>
+                <p class="text-gray-500 dark:text-gray-400 text-sm">Years Experience</p>
+              </div>
+              <div>
+                <h4 class="text-3xl font-black text-brand">100k</h4>
+                <p class="text-gray-500 dark:text-gray-400 text-sm">Happy Customers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-32 bg-gray-50 dark:bg-dark-secondary relative overflow-hidden">
+      <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15rem] font-black text-black/[0.02] dark:text-white/[0.02] pointer-events-none select-none uppercase">
+        DNK TEAM</div>
+
+      <div class="max-w-[88%] mx-auto relative z-10">
+        <div class="text-center mb-24 space-y-4">
+          <span class="text-brand font-bold uppercase tracking-widest text-sm">Meet Our Visionaries</span>
+          <h2 class="text-5xl font-black dark:text-white">The Minds Behind DNK</h2>
+          <div class="w-20 h-1 bg-brand mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          <div
+            class="group relative bg-white dark:bg-dark p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-transparent hover:border-brand/20">
+            <div class="relative w-48 h-48 mx-auto mb-8">
+              <div
+                class="absolute inset-0 bg-brand rounded-full rotate-6 scale-95 group-hover:rotate-0 group-hover:scale-105 transition-transform duration-500">
+              </div>
+              <img src="/assets/images/team2-free-img.png"
+                class="relative w-full h-full rounded-full object-cover z-10 p-1 bg-white dark:bg-dark"
+                alt="Harvey Spector" />
+            </div>
+            <div class="text-center space-y-2">
+              <h4 class="text-2xl font-black dark:text-white group-hover:text-brand transition-colors">Harvey Spector
+              </h4>
+              <p
+                class="text-gray-500 dark:text-gray-400 font-medium pb-4 border-b border-gray-100 dark:border-gray-800">
+                Founder - CEO</p>
+              <div
+                class="flex justify-center gap-4 pt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <a href="#" class="text-gray-400 hover:text-brand"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-gray-400 hover:text-brand"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group relative bg-white dark:bg-dark p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-transparent hover:border-brand/20">
+            <div class="relative w-48 h-48 mx-auto mb-8">
+              <div
+                class="absolute inset-0 bg-brand rounded-full -rotate-6 scale-95 group-hover:rotate-0 group-hover:scale-105 transition-transform duration-500">
+              </div>
+              <img src="/assets/images/team1-free-img.png"
+                class="relative w-full h-full rounded-full object-cover z-10 p-1 bg-white dark:bg-dark"
+                alt="Jessica Pearson" />
+            </div>
+            <div class="text-center space-y-2">
+              <h4 class="text-2xl font-black dark:text-white group-hover:text-brand transition-colors">Jessica Pearson
+              </h4>
+              <p
+                class="text-gray-500 dark:text-gray-400 font-medium pb-4 border-b border-gray-100 dark:border-gray-800">
+                COO</p>
+              <div
+                class="flex justify-center gap-4 pt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <a href="#" class="text-gray-400 hover:text-brand"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-gray-400 hover:text-brand"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group relative bg-white dark:bg-dark p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-transparent hover:border-brand/20">
+            <div class="relative w-48 h-48 mx-auto mb-8">
+              <div
+                class="absolute inset-0 bg-brand rounded-full rotate-3 scale-95 group-hover:rotate-0 group-hover:scale-105 transition-transform duration-500">
+              </div>
+              <img src="/assets/images/team3-free-img.png"
+                class="relative w-full h-full rounded-full object-cover z-10 p-1 bg-white dark:bg-dark"
+                alt="Rachel Zain" />
+            </div>
+            <div class="text-center space-y-2">
+              <h4 class="text-2xl font-black dark:text-white group-hover:text-brand transition-colors">Rachel Zain</h4>
+              <p
+                class="text-gray-500 dark:text-gray-400 font-medium pb-4 border-b border-gray-100 dark:border-gray-800">
+                Marketing Head</p>
+              <div
+                class="flex justify-center gap-4 pt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <a href="#" class="text-gray-400 hover:text-brand"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-gray-400 hover:text-brand"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="relative h-[500px] flex items-center justify-center bg-fixed bg-[url('/assets/images/banner-06.jpg')] bg-cover bg-center">
+      <div class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+      <div
+        class="max-w-2xl w-[90%] bg-white/5 backdrop-blur-md border border-white/10 dark:bg-black/30 dark:border-white/5 p-16 rounded-[3rem] relative z-10 text-center space-y-8 animate-fade-in-up shadow-2xl">
+        <div class="space-y-4">
+          <h2 class="text-4xl md:text-5xl font-black text-white">Join Our Journey</h2>
+          <p class="text-white/70 text-lg font-light tracking-wide">Stay Updated with Our Latest Collections & Stories
+          </p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-6">
+          <a href="#"
+            class="w-14 h-14 flex items-center justify-center bg-white/10 hover:bg-brand text-white rounded-2xl transition-all duration-300 hover:-translate-y-2 border border-white/10 shadow-lg">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#"
+            class="w-14 h-14 flex items-center justify-center bg-white/10 hover:bg-brand text-white rounded-2xl transition-all duration-300 hover:-translate-y-2 border border-white/10 shadow-lg">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#"
+            class="w-14 h-14 flex items-center justify-center bg-white/10 hover:bg-brand text-white rounded-2xl transition-all duration-300 hover:-translate-y-2 border border-white/10 shadow-lg">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#"
+            class="w-14 h-14 flex items-center justify-center bg-white/10 hover:bg-brand text-white rounded-2xl transition-all duration-300 hover:-translate-y-2 border border-white/10 shadow-lg">
+            <i class="fab fa-google-plus-g"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-24 bg-white dark:bg-dark relative">
+      <div class="max-w-[88%] mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div
+            class="group text-center space-y-6 p-8 rounded-3xl hover:bg-gray-50 dark:hover:bg-dark-secondary transition-colors duration-500">
+            <div
+              class="w-20 h-20 bg-brand/5 dark:bg-brand/10 rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 group-hover:bg-brand transition-all duration-500">
+              <i class="fas fa-globe-americas text-brand group-hover:text-white text-3xl"></i>
+            </div>
+            <div class="space-y-2">
+              <h5 class="text-xl font-black dark:text-white">Worldwide Shipping</h5>
+              <p class="text-gray-500 dark:text-gray-400 font-light text-sm leading-relaxed">It elit tellus, luctus nec
+                ullamcorper mattis, pulvinar dapibus leo.</p>
+            </div>
+          </div>
+
+          <div
+            class="group text-center space-y-6 p-8 rounded-3xl hover:bg-gray-50 dark:hover:bg-dark-secondary transition-colors duration-500">
+            <div
+              class="w-20 h-20 bg-brand/5 dark:bg-brand/10 rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 group-hover:bg-brand transition-all duration-500">
+              <i class="fas fa-award text-brand group-hover:text-white text-3xl"></i>
+            </div>
+            <div class="space-y-2">
+              <h5 class="text-xl font-black dark:text-white">Best Quality</h5>
+              <p class="text-gray-500 dark:text-gray-400 font-light text-sm leading-relaxed">It elit tellus, luctus nec
+                ullamcorper mattis, pulvinar dapibus leo.</p>
+            </div>
+          </div>
+
+          <div
+            class="group text-center space-y-6 p-8 rounded-3xl hover:bg-gray-50 dark:hover:bg-dark-secondary transition-colors duration-500">
+            <div
+              class="w-20 h-20 bg-brand/5 dark:bg-brand/10 rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 group-hover:bg-brand transition-all duration-500">
+              <i class="fas fa-tag text-brand group-hover:text-white text-3xl"></i>
+            </div>
+            <div class="space-y-2">
+              <h5 class="text-xl font-black dark:text-white">Best Offers</h5>
+              <p class="text-gray-500 dark:text-gray-400 font-light text-sm leading-relaxed">It elit tellus, luctus nec
+                ullamcorper mattis, pulvinar dapibus leo.</p>
+            </div>
+          </div>
+
+          <div
+            class="group text-center space-y-6 p-8 rounded-3xl hover:bg-gray-50 dark:hover:bg-dark-secondary transition-colors duration-500">
+            <div
+              class="w-20 h-20 bg-brand/5 dark:bg-brand/10 rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 group-hover:bg-brand transition-all duration-500">
+              <i class="fas fa-user-lock text-brand group-hover:text-white text-3xl"></i>
+            </div>
+            <div class="space-y-2">
+              <h5 class="text-xl font-black dark:text-white">Secure Payments</h5>
+              <p class="text-gray-500 dark:text-gray-400 font-light text-sm leading-relaxed">It elit tellus, luctus nec
+                ullamcorper mattis, pulvinar dapibus leo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+  <script type="module" src="/js/pages/about.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DNK | Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#0084d6',
+              light: '#b1d8ff',
+              dark: '#0075be',
+            },
+            dark: '#0b1517',
+            'dark-secondary': '#182326',
+          },
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
+            'fade-in-up-delay': 'fadeInUp 0.6s ease-out 0.15s forwards',
+            'fade-in-up-delay-2': 'fadeInUp 0.6s ease-out 0.3s forwards',
+            'shimmer': 'shimmer 3s ease-in-out infinite',
+            'float': 'float 6s ease-in-out infinite',
+            'float-delay-1': 'float 8s ease-in-out infinite 1s',
+            'float-delay-half': 'float 5s ease-in-out infinite 0.5s',
+          },
+          keyframes: {
+            fadeInUp: {
+              'from': { opacity: '0', transform: 'translateY(20px)' },
+              'to': { opacity: '1', transform: 'translateY(0)' },
+            },
+            shimmer: {
+              '0%': { backgroundPosition: '-200% 0' },
+              '100%': { backgroundPosition: '200% 0' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-10px)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+  .input-glow:focus {
+  box-shadow: 0 0 0 3px rgba(0, 132, 214, 0.15);
+  }
+
+  .image-panel {
+  background: linear-gradient(135deg,
+  rgba(0, 132, 214, 0.85) 0%,
+  rgba(0, 26, 58, 0.9) 50%,
+  rgba(11, 21, 23, 0.95) 100%), url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80');
+  background-size: cover;
+  background-position: center;
+  }
+
+  .decorative-circle {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  position: absolute;
+  }
+
+  .btn-shimmer {
+  background: linear-gradient(90deg, #0084d6 0%, #00a4ff 50%, #0084d6 100%);
+  background-size: 200% 100%;
+  }
+  </style>
+</head>
+
+<body class="font-inter bg-gray-50 dark:bg-dark min-h-screen">
+  <div class="main min-h-screen flex items-center justify-center p-4 md:p-8">
+
+    <div
+      class="auth-layout max-w-[1100px] w-full mx-auto bg-white dark:bg-gray-900 rounded-3xl shadow-[0_25px_60px_rgba(0,0,0,0.12)] dark:shadow-[0_25px_60px_rgba(0,0,0,0.4)] overflow-hidden">
+
+      <div class="container grid grid-cols-1 lg:grid-cols-2 min-h-[650px]">
+
+        <div class="image-panel hidden lg:flex flex-col justify-between p-12 relative overflow-hidden order-2">
+          <div class="decorative-circle w-[300px] h-[300px] -top-[80px] -right-[80px] opacity-30 animate-float"></div>
+          <div
+            class="decorative-circle w-[200px] h-[200px] bottom-[40px] -left-[60px] opacity-20 animate-float-delay-1">
+          </div>
+          <div class="decorative-circle w-[100px] h-[100px] top-[40%] right-[20%] opacity-10 animate-float-delay-half">
+          </div>
+
+          <div class="relative z-10">
+            <img src="/assets/images/login-logo.png" alt="DNK Logo"
+              class="w-[140px] mb-4 drop-shadow-2xl invert brightness-200">
+          </div>
+
+          <div class="relative z-10 my-auto">
+            <h2 class="text-4xl font-extrabold text-white leading-tight mb-4">
+              Discover Your<br>Perfect Style
+            </h2>
+            <p class="text-white/70 text-lg leading-relaxed max-w-[320px]">
+              Join thousands of fashion enthusiasts. Get exclusive deals and trending picks curated just for you.
+            </p>
+            <div class="flex items-center gap-4 mt-8">
+              <div class="flex -space-x-3">
+                <div
+                  class="w-10 h-10 rounded-full bg-brand-light/30 border-2 border-white/30 flex items-center justify-center text-white text-xs font-bold">
+                  JD</div>
+                <div
+                  class="w-10 h-10 rounded-full bg-brand/40 border-2 border-white/30 flex items-center justify-center text-white text-xs font-bold">
+                  SK</div>
+                <div
+                  class="w-10 h-10 rounded-full bg-brand-dark/50 border-2 border-white/30 flex items-center justify-center text-white text-xs font-bold">
+                  MA</div>
+              </div>
+              <p class="text-white/60 text-sm">
+                <span class="text-white font-semibold">2,000+</span> happy customers
+              </p>
+            </div>
+          </div>
+
+          <div class="relative z-10">
+            <p class="text-white/40 text-xs">&copy; 2026 DNK Shop. All rights reserved.</p>
+          </div>
+        </div>
+
+        <div class="p-8 md:p-12 lg:p-14 flex flex-col justify-center order-1">
+
+          <div class="lg:hidden text-center mb-8">
+            <img src="/assets/images/login-logo.png" alt="DNK Logo" class="max-w-[160px] mx-auto">
+          </div>
+
+          <form class="login-form space-y-5 animate-fade-in-up" method="post">
+            <div class="mb-2">
+              <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white">Welcome back</h2>
+              <p class="text-gray-500 dark:text-gray-400 mt-2 text-sm">Sign in to your account to continue shopping</p>
+            </div>
+
+            <div class="space-y-1.5">
+              <label for="loginEmail"
+                class="block text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wider">Email</label>
+              <input id="loginEmail" type="email" placeholder="you@example.com" required
+                class="input-glow w-full px-4 py-3.5 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 dark:text-white rounded-xl focus:outline-none focus:border-brand transition-all duration-300 text-sm">
+            </div>
+
+            <div class="space-y-1.5">
+              <label for="loginPassword"
+                class="block text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wider">Password</label>
+              <input id="loginPassword" type="password" placeholder="••••••••" required
+                class="input-glow w-full px-4 py-3.5 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 dark:text-white rounded-xl focus:outline-none focus:border-brand transition-all duration-300 text-sm">
+            </div>
+
+            <div class="flex items-center justify-between">
+              <label class="flex items-center gap-2 cursor-pointer">
+                <input type="checkbox" class="w-4 h-4 rounded border-gray-300 accent-brand">
+                <span class="text-xs text-gray-500 dark:text-gray-400">Remember me</span>
+              </label>
+              <a href="#"
+                class="forgot-password text-xs text-brand hover:text-brand-dark font-semibold transition-all">Forgot
+                Password?</a>
+            </div>
+
+            <button id="loginButton" type="submit"
+              class="btn-shimmer animate-shimmer w-full text-white font-semibold py-3.5 rounded-xl transition-all shadow-lg hover:shadow-xl hover:shadow-brand/20 text-sm tracking-wide">
+              Sign In
+            </button>
+
+            <p class="text-center text-gray-500 dark:text-gray-400 text-sm pt-2">
+              Don't have an account?
+              <a href="#"
+                class="switch-to-register text-brand hover:text-brand-dark font-bold transition-all ml-1">Create one</a>
+            </p>
+          </form>
+
+          <form class="register-form space-y-5 hidden" method="post">
+            <div class="mb-2 animate-fade-in-up">
+              <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white">Create account</h2>
+              <p class="text-gray-500 dark:text-gray-400 mt-2 text-sm">Join DNK Shop and start your fashion journey</p>
+            </div>
+
+            <div class="space-y-1.5 animate-fade-in-up-delay">
+              <label for="registerUsername"
+                class="block text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wider">Username</label>
+              <input id="registerUsername" type="text" placeholder="Choose a username" required
+                class="input-glow w-full px-4 py-3.5 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 dark:text-white rounded-xl focus:outline-none focus:border-brand transition-all duration-300 text-sm">
+            </div>
+
+            <div class="space-y-1.5 animate-fade-in-up-delay">
+              <label for="registerEmail"
+                class="block text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wider">Email</label>
+              <input id="registerEmail" type="email" placeholder="you@example.com" required
+                class="input-glow w-full px-4 py-3.5 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 dark:text-white rounded-xl focus:outline-none focus:border-brand transition-all duration-300 text-sm">
+            </div>
+
+            <div class="space-y-1.5 animate-fade-in-up-delay-2">
+              <label for="registerPassword"
+                class="block text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wider">Password</label>
+              <input id="registerPassword" type="password" placeholder="Min 8 characters" required
+                class="input-glow w-full px-4 py-3.5 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 dark:text-white rounded-xl focus:outline-none focus:border-brand transition-all duration-300 text-sm">
+            </div>
+
+            <button id="registerButton" type="submit"
+              class="btn-shimmer animate-shimmer w-full text-white font-semibold py-3.5 rounded-xl transition-all shadow-lg hover:shadow-xl hover:shadow-brand/20 text-sm tracking-wide animate-fade-in-up-delay-2">
+              Create Account
+            </button>
+
+            <p class="text-center text-gray-500 dark:text-gray-400 text-sm pt-2">
+              Already have an account?
+              <a href="#" class="switch-to-login text-brand hover:text-brand-dark font-bold transition-all ml-1">Sign
+                in</a>
+            </p>
+          </form>
+
+          <form class="forgot-form space-y-5 hidden" method="post">
+            <div class="mb-2 animate-fade-in-up">
+              <div class="w-14 h-14 rounded-2xl bg-brand/10 flex items-center justify-center mb-4">
+                <i class="fa-solid fa-lock text-brand text-xl"></i>
+              </div>
+              <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white">Reset Password</h2>
+              <p class="text-gray-500 dark:text-gray-400 mt-2 text-sm">Enter your email and we'll send you a reset code
+              </p>
+            </div>
+
+            <div class="space-y-1.5 animate-fade-in-up-delay">
+              <label for="forgotEmail"
+                class="block text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wider">Email</label>
+              <input id="forgotEmail" type="email" placeholder="you@example.com" required
+                class="input-glow w-full px-4 py-3.5 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 dark:text-white rounded-xl focus:outline-none focus:border-brand transition-all duration-300 text-sm">
+            </div>
+
+            <button id="forgotButton" type="submit"
+              class="btn-shimmer animate-shimmer w-full text-white font-semibold py-3.5 rounded-xl transition-all shadow-lg hover:shadow-xl hover:shadow-brand/20 text-sm tracking-wide animate-fade-in-up-delay">
+              Send Reset Code
+            </button>
+
+            <p class="text-center text-gray-500 dark:text-gray-400 text-sm pt-2">
+              Remember your password?
+              <a href="#" class="back-to-login text-brand hover:text-brand-dark font-bold transition-all ml-1">Sign
+                in</a>
+            </p>
+          </form>
+
+          <form class="reset-form space-y-5 hidden" method="post">
+            <div class="mb-2 animate-fade-in-up">
+              <div class="w-14 h-14 rounded-2xl bg-green-500/10 flex items-center justify-center mb-4">
+                <i class="fa-solid fa-key text-green-500 text-xl"></i>
+              </div>
+              <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white">New Password</h2>
+              <p class="text-gray-500 dark:text-gray-400 mt-2 text-sm">Enter the code we sent and your new password</p>
+            </div>
+
+            <div class="space-y-1.5 animate-fade-in-up-delay">
+              <label for="resetCode"
+                class="block text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wider">Reset
+                Code</label>
+              <input id="resetCode" type="text" placeholder="Enter 6-digit code" required
+                class="input-glow w-full px-4 py-3.5 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 dark:text-white rounded-xl focus:outline-none focus:border-brand transition-all duration-300 text-sm tracking-[6px] text-center font-mono">
+            </div>
+
+            <div class="space-y-1.5 animate-fade-in-up-delay">
+              <label for="newPassword"
+                class="block text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wider">New
+                Password</label>
+              <input id="newPassword" type="password" placeholder="••••••••" required
+                class="input-glow w-full px-4 py-3.5 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 dark:text-white rounded-xl focus:outline-none focus:border-brand transition-all duration-300 text-sm">
+            </div>
+
+            <div class="space-y-1.5 animate-fade-in-up-delay-2">
+              <label for="confirmPassword"
+                class="block text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wider">Confirm
+                Password</label>
+              <input id="confirmPassword" type="password" placeholder="••••••••" required
+                class="input-glow w-full px-4 py-3.5 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 dark:text-white rounded-xl focus:outline-none focus:border-brand transition-all duration-300 text-sm">
+            </div>
+
+            <button id="resetButton" type="submit"
+              class="btn-shimmer animate-shimmer w-full text-white font-semibold py-3.5 rounded-xl transition-all shadow-lg hover:shadow-xl hover:shadow-brand/20 text-sm tracking-wide animate-fade-in-up-delay-2">
+              Reset Password
+            </button>
+
+            <p class="text-center text-gray-500 dark:text-gray-400 text-sm pt-2">
+              Back to
+              <a href="#" class="back-to-login-2 text-brand hover:text-brand-dark font-bold transition-all ml-1">Sign
+                in</a>
+            </p>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="/js/pages/login.js"></script>
+</body>
+
+</html>

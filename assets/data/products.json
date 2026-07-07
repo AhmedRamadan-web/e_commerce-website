@@ -1,0 +1,863 @@
+[
+  {
+    "id": 1,
+    "slug": "dnk-sports-shoes",
+    "name": "DNK Sports Shoes",
+    "category": "Men",
+    "type": "variable",
+    "price": "$150.00",
+    "description": "High-performance sports shoes featuring breathable mesh and cushioned soles for maximum comfort during intense workouts.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/sports-shoe1-600x600.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/sports-shoe2-600x600.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/sports-shoe3-600x600.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/sports-shoe4-600x600.jpg"
+    ],
+    "variations": [
+      {
+        "color": "blue",
+        "price": 150,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/sports-shoe1-600x600.jpg"
+      },
+      {
+        "color": "red",
+        "price": 150,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/sports-shoe2-600x600.jpg"
+      },
+      {
+        "color": "yellow",
+        "price": 200,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/sports-shoe3-600x600.jpg"
+      },
+      {
+        "color": "green",
+        "price": 250,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/sports-shoe4-600x600.jpg"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "stainless-steel-sunglasses",
+    "name": "Stainless Steel Sunglasses",
+    "category": "Accessories",
+    "type": "variable",
+    "price": "$165.00",
+    "description": "Sleek, lightweight sunglasses with durable stainless steel frames and UV-protective lenses for a modern, sophisticated look.",
+    "images": [
+      "https://tse3.mm.bing.net/th/id/OIP.jZwJe58euWA4Fhol2-frrgHaHa?w=700&h=700&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "https://web.tradekorea.com/product/149/1895149/Classic_Acetate___Thin_Stainless_Steel__Frame_Sunglasses_6.jpg"
+    ],
+    "variations": [
+      {
+        "color": "black",
+        "price": 165,
+        "image": "https://tse3.mm.bing.net/th/id/OIP.jZwJe58euWA4Fhol2-frrgHaHa?w=700&h=700&rs=1&pid=ImgDetMain&o=7&rm=3"
+      },
+      {
+        "color": "gold",
+        "price": 175,
+        "image": "https://web.tradekorea.com/product/149/1895149/Classic_Acetate___Thin_Stainless_Steel__Frame_Sunglasses_6.jpg"
+      }
+    ],
+    "rating": 4.5
+  },
+  {
+    "id": 3,
+    "slug": "vintage-band-tshirt",
+    "name": "Vintage Band Tshirt",
+    "category": "Men",
+    "type": "variable",
+    "price": "$45.00",
+    "description": "A soft cotton-blend tee featuring a retro-inspired band graphic, perfect for a relaxed and stylish casual outfit.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/tshirt4-600x600.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/tshirt7-600x600.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/tshirt5-600x600.jpg"
+    ],
+    "variations": [
+      {
+        "color": "blue",
+        "price": 45,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/tshirt4-600x600.jpg"
+      },
+      {
+        "color": "orange",
+        "price": 45,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/tshirt7-600x600.jpg"
+      },
+      {
+        "color": "green",
+        "price": 50,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/tshirt5-600x600.jpg"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "men-casual-pants",
+    "name": "Men Casual Pants",
+    "category": "Men",
+    "type": "variable",
+    "price": "$125.00",
+    "description": "Versatile and comfortable pants with a tailored fit, designed for everyday wear and long-lasting durability.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-m-jeans2-600x600.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-m-jeans3-600x600.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-m-jeans4-600x600.jpg"
+    ],
+    "variations": [
+      {
+        "color": "darkblue",
+        "price": 125,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-m-jeans2-600x600.jpg"
+      },
+      {
+        "color": "blue",
+        "price": 135,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-m-jeans3-600x600.jpg"
+      },
+      {
+        "color": "gray",
+        "price": 130,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-m-jeans4-600x600.jpg"
+      }
+    ],
+    "featured": true
+  },
+  {
+    "id": 5,
+    "slug": "women-casual-jeans",
+    "name": "Women Casual Jeans",
+    "category": "Women",
+    "type": "simple",
+    "price": "$89.00",
+    "description": "Classic denim jeans with a flattering cut and a touch of stretch for all-day comfort and style.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-w-jeans2-600x600.jpg"
+    ],
+    "variations": [],
+    "rating": 5
+  },
+  {
+    "id": 6,
+    "slug": "minimalist-leather-crossbody",
+    "name": "Minimalist Leather Crossbody",
+    "category": "Accessories",
+    "type": "simple",
+    "price": "$135.00",
+    "description": "A clean, elegant crossbody bag made from premium leather, featuring a compact design for your daily essentials.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-bag1-600x600.jpg"
+    ],
+    "variations": []
+  },
+  {
+    "id": 7,
+    "slug": "sports-shoes",
+    "name": "Sports Shoes",
+    "category": "Men",
+    "type": "simple",
+    "price": "$28.00",
+    "description": "Lightweight and flexible sports shoes designed for agility and support across various athletic activities.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/sports-shoe1-600x600.jpg"
+    ],
+    "variations": [],
+    "featured": true
+  },
+  {
+    "id": 8,
+    "slug": "women-denim-jeans",
+    "name": "Women Denim Jeans",
+    "category": "Women",
+    "type": "variable",
+    "price": "$78.00",
+    "description": "Durable denim jeans featuring a timeless wash and a comfortable fit that pairs perfectly with any top.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-w-jeans3-600x600.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-w-jeans4-600x600.jpg"
+    ],
+    "variations": [
+      {
+        "color": "blue",
+        "price": 78,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-w-jeans3-600x600.jpg"
+      },
+      {
+        "color": "grey",
+        "price": 82,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-w-jeans4-600x600.jpg"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "heart-necklace",
+    "name": "Heart Necklace",
+    "category": "Accessories",
+    "type": "variable",
+    "price": "$95.00",
+    "description": "An elegant necklace featuring a delicate heart pendant, making it a perfect gift or a charming daily accessory.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2022/08/product-accessory2-b.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2022/08/product-accessory2-c.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-accessory2-600x600.jpg"
+    ],
+    "variations": [
+      {
+        "color": "gold",
+        "price": 95,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2022/08/product-accessory2-b.jpg"
+      },
+      {
+        "color": "brown",
+        "price": 100,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2022/08/product-accessory2-c.jpg"
+      },
+      {
+        "color": "gray",
+        "price": 98,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-accessory2-600x600.jpg"
+      }
+    ],
+    "rating": 4
+  },
+  {
+    "id": 10,
+    "slug": "men-hoodie",
+    "name": "Men Hoodie",
+    "category": "Men",
+    "type": "simple",
+    "price": "$215.00",
+    "description": "A cozy, fleece-lined hoodie with a spacious front pocket and adjustable drawstrings for ultimate warmth and comfort.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-hoodie1-600x600.jpg"
+    ],
+    "variations": []
+  },
+  {
+    "id": 11,
+    "slug": "ripped-boyfriend-jeans",
+    "name": "Ripped Boyfriend Jeans",
+    "category": "Women",
+    "type": "simple",
+    "price": "$88.00",
+    "description": "Relaxed-fit jeans with stylish distressed detailing, offering a trendy and effortless boyfriend-style look.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-w-jeans2-600x600.jpg"
+    ],
+    "variations": [],
+    "featured": true
+  },
+  {
+    "id": 12,
+    "slug": "men-hoodie",
+    "name": "Men Hoodie",
+    "category": "Men",
+    "type": "variable",
+    "price": "$145.00",
+    "description": "A versatile pullover hoodie made from high-quality fabric, ideal for layering and staying warm during cooler weather.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-hoodie2-600x600.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-hoodie3-600x600.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-hoodie4.jpg-600x600.jpg"
+    ],
+    "variations": [
+      {
+        "color": "navy",
+        "price": 145,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-hoodie2-600x600.jpg"
+      },
+      {
+        "color": "green",
+        "price": 150,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-hoodie3-600x600.jpg"
+      },
+      {
+        "color": "red",
+        "price": 155,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-hoodie4.jpg-600x600.jpg"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "slug": "long-sleeve-crop-top",
+    "name": "Long Sleeve Crop Top",
+    "category": "Women",
+    "type": "simple",
+    "price": "$48.00",
+    "description": "A chic long-sleeve crop top with a snug fit, perfect for transitioning from active workouts to casual social outings.",
+    "images": [
+      "https://th.bing.com/th/id/R.e8dc839d26bf1d4703a94a27f50fcba6?rik=UOk4y1WpMvlaww&riu=http%3a%2f%2fshop.publicmyth.com%2fcdn%2fshop%2ffiles%2fBlack-Long-Sleeve_Crop-Top.jpg%3fv%3d1713893794&ehk=%2fYRJsWnTuwZvgsScA5FiYQShyIb1PcrKuoNRNR5xuGI%3d&risl=&pid=ImgRaw&r=0"
+    ],
+    "variations": [],
+    "rating": 4.5
+  },
+  {
+    "id": 14,
+    "slug": "graphic-tshirt",
+    "name": "Graphic Tshirt",
+    "category": "Women",
+    "type": "variable",
+    "price": "$25.00",
+    "description": "An eye-catching graphic tee made from soft, breathable fabric, available in various vibrant designs and seasonal colors.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/tshirt4-600x600.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/tshirt7-600x600.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/tshirt3-600x600.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/tshirt1-600x600.jpg"
+    ],
+    "variations": [
+      {
+        "color": "blue",
+        "price": 25,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/tshirt4-600x600.jpg"
+      },
+      {
+        "color": "orange",
+        "price": 27,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/tshirt7-600x600.jpg"
+      },
+      {
+        "color": "pink",
+        "price": 26,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/tshirt3-600x600.jpg"
+      },
+      {
+        "color": "purple",
+        "price": 28,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/tshirt1-600x600.jpg"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "slug": "dnk-tshirt",
+    "name": "DNK Tshirt",
+    "category": "Men",
+    "type": "variable",
+    "price": "$40.00",
+    "description": "A signature brand tee with a modern fit and premium cotton feel, suitable for any casual or athletic occasion.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/tshirt2-600x600.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/tshirt5-600x600.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/tshirt1-600x600.jpg"
+    ],
+    "variations": [
+      {
+        "color": "aqua",
+        "price": 40,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/tshirt2-600x600.jpg"
+      },
+      {
+        "color": "green",
+        "price": 44,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/tshirt5-600x600.jpg"
+      },
+      {
+        "color": "purple",
+        "price": 28,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/tshirt1-600x600.jpg"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "slug": "classic-hoodie",
+    "name": "Classic Hoodie",
+    "category": "Men",
+    "type": "variable",
+    "price": "$150.00",
+    "description": "A timeless essential hoodie featuring a soft interior and a classic silhouette for reliable everyday comfort and style.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-hoodie1-600x600.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-hoodie2-600x600.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-hoodie3-600x600.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-hoodie4.jpg-600x600.jpg"
+    ],
+    "variations": [
+      {
+        "color": "black",
+        "price": 150,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-hoodie1-600x600.jpg"
+      },
+      {
+        "color": "navy",
+        "price": 150,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-hoodie2-600x600.jpg"
+      },
+      {
+        "color": "green",
+        "price": 150,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-hoodie3-600x600.jpg"
+      },
+      {
+        "color": "red",
+        "price": 150,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-hoodie4.jpg-600x600.jpg"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "slug": "dark-blue-jeans",
+    "name": "Dark Blue Jeans",
+    "category": "Men",
+    "type": "simple",
+    "price": "$150.00",
+    "description": "Premium dark-wash jeans with a classic straight-leg cut, offering a polished and professional look for any setting.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-m-jeans1-600x600.jpg"
+    ],
+    "variations": [],
+    "featured": true,
+    "rating": 1
+  },
+  {
+    "id": 18,
+    "slug": "dark-gray-jeans",
+    "name": "Dark Gray Jeans",
+    "category": "Men",
+    "type": "simple",
+    "price": "$150.00",
+    "description": "Stylish dark gray jeans with a contemporary wash, designed to provide both durability and a sleek modern aesthetic.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-m-jeans4-600x600.jpg"
+    ],
+    "variations": []
+  },
+  {
+    "id": 19,
+    "slug": "blue-denim-jeans",
+    "name": "Blue Denim Jeans",
+    "category": "Women",
+    "type": "simple",
+    "price": "$150.00",
+    "description": "High-quality blue denim jeans with a comfortable mid-rise fit, perfect for versatile daily styling and long-term wear.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-w-jeans2-600x600.jpg"
+    ],
+    "variations": []
+  },
+  {
+    "id": 20,
+    "slug": "basic-gray-jeans",
+    "name": "Basic Gray Jeans",
+    "category": "Women",
+    "type": "simple",
+    "price": "$150.00",
+    "description": "Essential gray jeans that offer a clean, minimalist look with a primary focus on comfort and high-quality fabric.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-w-jeans4-600x600.jpg"
+    ],
+    "variations": []
+  },
+  {
+    "id": 21,
+    "slug": "slim-fit-blue-jeans",
+    "name": "Slim Fit Blue Jeans",
+    "category": "Women",
+    "type": "simple",
+    "price": "$150.00",
+    "description": "Modern slim-fit jeans in a classic blue wash, tailored to provide a sharp, streamlined silhouette for a polished appearance.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-w-jeans3-600x600.jpg"
+    ],
+    "variations": []
+  },
+  {
+    "id": 22,
+    "slug": "blue-denim-shorts",
+    "name": "Blue Denim Shorts",
+    "category": "Women",
+    "type": "simple",
+    "price": "$150.00",
+    "description": "Casual denim shorts featuring a classic five-pocket design and a comfortable fit, ideal for warm-weather and vacation days.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-w-jeans1-600x600.jpg"
+    ],
+    "variations": []
+  },
+  {
+    "id": 23,
+    "slug": "anchor-bracelet",
+    "name": "Anchor Bracelet",
+    "category": "Accessories",
+    "type": "variable",
+    "price": "$150.00",
+    "description": "A nautical-themed bracelet featuring a stylish anchor charm and durable cord, perfect for adding a coastal vibe to your look.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-accessory2-600x600.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2022/08/product-accessory2-b.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2022/08/product-accessory2-c.jpg"
+    ],
+    "variations": [
+      {
+        "color": "black",
+        "price": 150,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-accessory2-600x600.jpg"
+      },
+      {
+        "color": "gold",
+        "price": 170,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2022/08/product-accessory2-b.jpg"
+      },
+      {
+        "color": "red",
+        "price": 180,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2022/08/product-accessory2-c.jpg"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "slug": "boho-bangle-bracelet",
+    "name": "Boho Bangle Bracelet",
+    "category": "Accessories",
+    "type": "variable",
+    "price": "$150.00",
+    "description": "A bohemian-inspired bangle set with intricate details and a vibrant finish, ideal for layered styling and festive events.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-accessory1-600x600.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2022/08/product-accessory1-c.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2022/08/product-accessory1-b.jpg"
+    ],
+    "variations": [
+      {
+        "color": "aqua",
+        "price": 150,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-accessory1-600x600.jpg"
+      },
+      {
+        "color": "green",
+        "price": 160,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2022/08/product-accessory1-c.jpg"
+      },
+      {
+        "color": "red",
+        "price": 170,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2022/08/product-accessory1-b.jpg"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "slug": "buddha-bracelet",
+    "name": "Buddha Bracelet",
+    "category": "Accessories",
+    "type": "simple",
+    "price": "$150.00",
+    "description": "A spiritually inspired bracelet featuring Buddha-head charms and natural beads for a calm, grounded, and mindful look.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-accessory3-600x600.jpg"
+    ],
+    "variations": []
+  },
+  {
+    "id": 26,
+    "slug": "light-brown-purse",
+    "name": "Light Brown Purse",
+    "category": "Accessories",
+    "type": "simple",
+    "price": "$150.00",
+    "description": "A versatile light brown purse with a clean, functional design and ample space for organizing your daily essentials.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-bag1-600x600.jpg"
+    ],
+    "variations": []
+  },
+  {
+    "id": 27,
+    "slug": "black-over-the-shoulder-handbag",
+    "name": "Black Over-the-shoulder Handbag",
+    "category": "Accessories",
+    "type": "simple",
+    "price": "$150.00",
+    "description": "A sophisticated black handbag with a sturdy strap, perfect for professional settings, meetings, and evening events.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-bag2-600x600.jpg"
+    ],
+    "variations": []
+  },
+  {
+    "id": 28,
+    "slug": "bright-gold-purse-with-chain",
+    "name": "Bright Gold Purse With Chain",
+    "category": "Accessories",
+    "type": "simple",
+    "price": "$150.00",
+    "description": "A statement gold-toned purse featuring an elegant chain strap, ideal for adding a touch of glamour to your evening attire.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-bag4-600x600.jpg"
+    ],
+    "variations": []
+  },
+  {
+    "id": 29,
+    "slug": "bright-red-bag",
+    "name": "Bright Red Bag",
+    "category": "Accessories",
+    "type": "variable",
+    "price": "$100.00",
+    "description": "A bold red handbag with a modern silhouette and a vibrant finish, designed to make any outfit stand out instantly.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2022/08/product-bag3-c.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2022/08/product-bag3-d.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2022/08/product-bag3-b.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-bag3-600x600.jpg"
+    ],
+    "variations": [
+      {
+        "color": "blue",
+        "price": 100,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2022/08/product-bag3-c.jpg"
+      },
+      {
+        "color": "orange",
+        "price": 110,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2022/08/product-bag3-d.jpg"
+      },
+      {
+        "color": "purple",
+        "price": 120,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2022/08/product-bag3-b.jpg"
+      },
+      {
+        "color": "red",
+        "price": 140,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/product-bag3-600x600.jpg"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "slug": "dnk-sports-shoes-women",
+    "name": "DNK Sports Shoes (Women)",
+    "category": "Women",
+    "type": "variable",
+    "price": "$175.00",
+    "description": "Performance-driven sports shoes for women, offering superior arch support and a lightweight, breathable design for all-day activity.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/sports-shoe5-600x600.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/sports-shoe4-600x600.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/sports-shoe2-600x600.jpg",
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/sports-shoe3-600x600.jpg"
+    ],
+    "variations": [
+      {
+        "color": "blue",
+        "price": 175,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/sports-shoe5-600x600.jpg"
+      },
+      {
+        "color": "aqua",
+        "price": 185,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2017/12/sports-shoe4-600x600.jpg"
+      },
+      {
+        "color": "red",
+        "price": 195,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/sports-shoe2-600x600.jpg"
+      },
+      {
+        "color": "green",
+        "price": 200,
+        "image": "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/sports-shoe3-600x600.jpg"
+      }
+    ],
+    "rating": 2.5,
+    "featured": true
+  },
+  {
+    "id": 31,
+    "slug": "premium-leather-jacket",
+    "name": "Premium Leather Jacket",
+    "category": "Men",
+    "type": "variable",
+    "price": "$280.00",
+    "description": "A high-quality leather jacket with a timeless biker-style silhouette and a smooth, premium finish for long-lasting outerwear style.",
+    "images": [
+      "https://media.istockphoto.com/id/505623612/photo/leather-jacket.jpg?s=1024x1024&w=is&k=20&c=xr4w6M-hXP8P5SUTaIh3MZqFfqkm7_rWVlIX97UjVyk=",
+      "https://media.istockphoto.com/id/1450117091/photo/male-leather-jacket.jpg?s=1024x1024&w=is&k=20&c=ZvojqVoJs0K5g0Gfye01P0eo1f-dR4-0t0xMadMMKoQ=",
+      "https://media.istockphoto.com/id/182483132/photo/tan-leather-jacket.jpg?s=1024x1024&w=is&k=20&c=Q319iS4u67v1dC2EcCchnlJdUQazSRTdClWaQYL576g="
+    ],
+    "variations": [
+      {
+        "color": "black",
+        "price": 280,
+        "image": "https://media.istockphoto.com/id/505623612/photo/leather-jacket.jpg?s=1024x1024&w=is&k=20&c=xr4w6M-hXP8P5SUTaIh3MZqFfqkm7_rWVlIX97UjVyk="
+      },
+      {
+        "color": "brown",
+        "price": 290,
+        "image": "https://media.istockphoto.com/id/1450117091/photo/male-leather-jacket.jpg?s=1024x1024&w=is&k=20&c=ZvojqVoJs0K5g0Gfye01P0eo1f-dR4-0t0xMadMMKoQ="
+      },
+      {
+        "color": "tan",
+        "price": 300,
+        "image": "https://media.istockphoto.com/id/182483132/photo/tan-leather-jacket.jpg?s=1024x1024&w=is&k=20&c=Q319iS4u67v1dC2EcCchnlJdUQazSRTdClWaQYL576g="
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "slug": "classic-leather-belt",
+    "name": "Classic Leather Belt",
+    "category": "Accessories",
+    "type": "variable",
+    "price": "$85.00",
+    "description": "A durable, genuine leather belt with a polished metal buckle, designed to perfectly complement any professional or casual outfit.",
+    "images": [
+      "https://i.etsystatic.com/53070615/r/il/0a21f4/6480354755/il_300x300.6480354755_cv9s.jpg",
+      "https://tse2.mm.bing.net/th/id/OIP.J13aCS93g9wmbnnitpF4oQHaE5?rs=1&pid=ImgDetMain&o=7&rm=3"
+    ],
+    "variations": [
+      {
+        "color": "black",
+        "price": 85,
+        "image": "https://i.etsystatic.com/53070615/r/il/0a21f4/6480354755/il_300x300.6480354755_cv9s.jpg"
+      },
+      {
+        "color": "brown",
+        "price": 90,
+        "image": "https://tse2.mm.bing.net/th/id/OIP.J13aCS93g9wmbnnitpF4oQHaE5?rs=1&pid=ImgDetMain&o=7&rm=3"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "slug": "womens-casual-blazer",
+    "name": "Women's Casual Blazer",
+    "category": "Women",
+    "type": "variable",
+    "price": "$195.00",
+    "description": "A structured yet lightweight blazer that effortlessly elevates casual tops for a professional and smart-casual aesthetic.",
+    "images": [
+      "https://media.istockphoto.com/id/914192800/photo/navy-blue-woman-leather-jacket-isolated-on-white.jpg?s=1024x1024&w=is&k=20&c=W-pFWthrRjZz0U4__Tr-uL4P6O-RTaMPs2keP57a3N4=",
+      "https://media.istockphoto.com/id/832092326/photo/silver-woman-leather-jacket-isolated-on-white.jpg?s=1024x1024&w=is&k=20&c=X_tD-TJQKggVzjjLu-8jiPd1CJnop4C-s6uTmVjY6qM=",
+      "https://media.istockphoto.com/id/1366191833/photo/female-beige-color-leather-jacket-back-view-womens-garment.jpg?s=1024x1024&w=is&k=20&c=CMM00jxjrg1txtpNa9EBd8Gc-ola8sK5krbZDpLQYEo="
+    ],
+    "variations": [
+      {
+        "color": "navy",
+        "price": 195,
+        "image": "https://media.istockphoto.com/id/914192800/photo/navy-blue-woman-leather-jacket-isolated-on-white.jpg?s=1024x1024&w=is&k=20&c=W-pFWthrRjZz0U4__Tr-uL4P6O-RTaMPs2keP57a3N4="
+      },
+      {
+        "color": "gray",
+        "price": 200,
+        "image": "https://media.istockphoto.com/id/832092326/photo/silver-woman-leather-jacket-isolated-on-white.jpg?s=1024x1024&w=is&k=20&c=X_tD-TJQKggVzjjLu-8jiPd1CJnop4C-s6uTmVjY6qM="
+      },
+      {
+        "color": "beige",
+        "price": 205,
+        "image": "https://media.istockphoto.com/id/1366191833/photo/female-beige-color-leather-jacket-back-view-womens-garment.jpg?s=1024x1024&w=is&k=20&c=CMM00jxjrg1txtpNa9EBd8Gc-ola8sK5krbZDpLQYEo="
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "slug": "canvas-sneakers",
+    "name": "Canvas Sneakers",
+    "category": "Women",
+    "type": "simple",
+    "price": "$65.00",
+    "description": "Classic canvas sneakers with a durable rubber sole, offering a lightweight and comfortable option for everyday casual wear.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/sports-shoe1-600x600.jpg"
+    ],
+    "variations": [],
+    "featured": true
+  },
+  {
+    "id": 35,
+    "slug": "classic-blue-shirt",
+    "name": "Classic blue Shirt",
+    "category": "Men",
+    "type": "simple",
+    "price": "$55.00",
+    "description": "A crisp, blue button-down shirt made from high-quality cotton for a sharp, professional, and refined appearance.",
+    "images": [
+      "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2021/03/tshirt2-600x600.jpg"
+    ],
+    "variations": []
+  },
+  {
+    "id": 36,
+    "slug": "silk-scarf",
+    "name": "Silk Scarf",
+    "category": "Accessories",
+    "type": "simple",
+    "price": "$120.00",
+    "description": "A luxurious silk scarf featuring elegant patterns and a smooth texture, perfect for accessorizing any formal or casual ensemble.",
+    "images": [
+      "https://tse4.mm.bing.net/th/id/OIP.UNIu06YOYbSX0-SfwnGlWwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3"
+    ],
+    "variations": []
+  },
+  {
+    "id": 37,
+    "slug": "vintage-watch",
+    "name": "Vintage Watch",
+    "category": "Accessories",
+    "type": "variable",
+    "price": "$225.00",
+    "description": "A classic-style timepiece with a refined dial and a comfortable leather-feel strap, blending traditional design with modern reliability.",
+    "images": [
+      "https://tse1.mm.bing.net/th/id/OIP.b3JVh6gxttCKxiCjmY58VAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
+      "https://www.careofcarl.com/bilder/artiklar/600x600_grey_4_5/20939610.jpg"
+    ],
+    "variations": [
+      {
+        "color": "silver",
+        "price": 225,
+        "image": "https://tse1.mm.bing.net/th/id/OIP.b3JVh6gxttCKxiCjmY58VAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+      },
+      {
+        "color": "black",
+        "price": 250,
+        "image": "https://www.careofcarl.com/bilder/artiklar/600x600_grey_4_5/20939610.jpg"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "slug": "wool-winter-coat",
+    "name": "Wool Winter Coat",
+    "category": "Women",
+    "type": "variable",
+    "price": "$320.00",
+    "description": "A warm and elegant wool-blend coat designed with a tailored fit to keep you cozy and stylish during the coldest months.",
+    "images": [
+      "https://media.istockphoto.com/id/528378569/photo/women-coat.jpg?s=1024x1024&w=is&k=20&c=GaF2AS6P4WP9qdQvA8ZkkgpIZAtTsKRvSp6DqUAN3oQ=",
+      "https://media.istockphoto.com/id/186853374/photo/womans-coat-isolated.jpg?s=1024x1024&w=is&k=20&c=tog8iKOXE_N6GqWPaBQLz02ujOvt8DieIvwC2pF_qCc=",
+      "https://media.istockphoto.com/id/184330267/photo/womans-coat-isolated.jpg?s=1024x1024&w=is&k=20&c=2qxm9Op7t4gW5d_4bdnaQ_eOKGBAFfH8Q5tFkHk-P3I=",
+      "https://media.istockphoto.com/id/1281561769/photo/elegant-grey-wool-womens-coat.jpg?s=1024x1024&w=is&k=20&c=G-bftcRD4AfvRO3y6z_q_r9PhV7pLMWe9cKx0RicPNM="
+    ],
+    "variations": [
+      {
+        "color": "black",
+        "price": 320,
+        "image": "https://media.istockphoto.com/id/528378569/photo/women-coat.jpg?s=1024x1024&w=is&k=20&c=GaF2AS6P4WP9qdQvA8ZkkgpIZAtTsKRvSp6DqUAN3oQ="
+      },
+      {
+        "color": "red",
+        "price": 330,
+        "image": "https://media.istockphoto.com/id/186853374/photo/womans-coat-isolated.jpg?s=1024x1024&w=is&k=20&c=tog8iKOXE_N6GqWPaBQLz02ujOvt8DieIvwC2pF_qCc="
+      },
+      {
+        "color": "beige",
+        "price": 340,
+        "image": "https://media.istockphoto.com/id/184330267/photo/womans-coat-isolated.jpg?s=1024x1024&w=is&k=20&c=2qxm9Op7t4gW5d_4bdnaQ_eOKGBAFfH8Q5tFkHk-P3I="
+      },
+      {
+        "color": "gray",
+        "price": 350,
+        "image": "https://media.istockphoto.com/id/1281561769/photo/elegant-grey-wool-womens-coat.jpg?s=1024x1024&w=is&k=20&c=G-bftcRD4AfvRO3y6z_q_r9PhV7pLMWe9cKx0RicPNM="
+      }
+    ],
+    "rating": 4.5
+  }
+]

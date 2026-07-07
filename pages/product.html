@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product - DNK Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#0084d6',
+              light: '#b1d8ff',
+              dark: '#0075be',
+            },
+            dark: '#0b1517',
+            'dark-secondary': '#182326',
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-in-up {
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: -200% 0;
+      }
+
+      100% {
+        background-position: 200% 0;
+      }
+    }
+
+    .btn-shimmer {
+      background: linear-gradient(90deg, #0084d6 0%, #33a3e8 40%, #0084d6 80%);
+      background-size: 200% 100%;
+      animation: shimmer 3s infinite;
+    }
+  </style>
+</head>
+
+<body class="bg-white dark:bg-[#0b1517] font-['Lato']">
+  <div id="nav"></div>
+
+  <!-- Breadcrumb Banner -->
+  <div class="pt-[102px]">
+    <div class="bg-gradient-to-br from-gray-900 via-[#001127] to-[#001a3a] py-12 px-4 relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-[250px] h-[250px] bg-brand/5 rounded-full blur-3xl"></div>
+      <div class="max-w-[88%] mx-auto relative z-10 animate-fade-in-up">
+        <nav class="flex items-center gap-2 text-xs text-white/40 mb-3">
+          <a href="/index.html" class="hover:text-white transition-colors">Home</a>
+          <i class="fa-solid fa-chevron-right text-[8px]"></i>
+          <a href="/pages/shop.html" class="hover:text-white transition-colors">Shop</a>
+          <i class="fa-solid fa-chevron-right text-[8px]"></i>
+          <span class="breadcrumb-category text-white/60">Men</span>
+          <i class="fa-solid fa-chevron-right text-[8px]"></i>
+          <span class="breadcrumb-product text-white/80">DNK Blue Shoes</span>
+        </nav>
+        <h1 class="text-3xl lg:text-4xl font-black text-white tracking-tight product-title-banner">Product Details</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-page max-w-[88%] mx-auto py-16">
+    <!-- Product Details -->
+    <div class="product-details grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20">
+      <!-- Image Gallery -->
+      <div class="product_images">
+        <div
+          class="mainImge relative bg-gray-50 dark:bg-dark-secondary rounded-3xl overflow-hidden mb-4 group cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500">
+          <img src="/assets/images/product1.jpg" alt="product" class="w-full h-auto p-6" />
+          <span
+            class="image-zoom-icon absolute top-4 right-4 w-12 h-12 bg-white/80 dark:bg-dark/80 backdrop-blur-sm rounded-2xl flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all shadow-lg">
+            <i class="bi bi-search text-brand"></i>
+          </span>
+        </div>
+
+        <div class="product-image-thumbnails grid grid-cols-4 gap-3">
+          <img src="/assets/images/product1.jpg" alt="shoes"
+            class="w-full h-auto rounded-xl cursor-pointer hover:opacity-75 transition-all border-2 border-transparent hover:border-brand bg-gray-50 dark:bg-dark-secondary p-2" />
+          <img src="/assets/images/product1.jpg" alt="shoes"
+            class="w-full h-auto rounded-xl cursor-pointer hover:opacity-75 transition-all border-2 border-transparent hover:border-brand bg-gray-50 dark:bg-dark-secondary p-2" />
+          <img src="/assets/images/product1.jpg" alt="shoes"
+            class="w-full h-auto rounded-xl cursor-pointer hover:opacity-75 transition-all border-2 border-transparent hover:border-brand bg-gray-50 dark:bg-dark-secondary p-2" />
+          <img src="/assets/images/product1.jpg" alt="shoes"
+            class="w-full h-auto rounded-xl cursor-pointer hover:opacity-75 transition-all border-2 border-transparent hover:border-brand bg-gray-50 dark:bg-dark-secondary p-2" />
+        </div>
+      </div>
+
+      <!-- Product Info -->
+      <div class="product-info space-y-6">
+        <div>
+          <p class="product-category mb-2">
+            <a class="category-link text-brand text-xs font-bold uppercase tracking-widest"
+              href="/pages/shop.html?category=Men">Men</a>
+          </p>
+          <h1 class="product-title text-3xl lg:text-4xl font-black dark:text-white tracking-tight mb-3">DNK Blue Shoes
+          </h1>
+
+          <!-- Rating -->
+          <div class="flex items-center gap-3 mb-4">
+            <div class="flex gap-0.5 text-amber-400 text-sm">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <span class="text-xs text-gray-400">(4 reviews)</span>
+          </div>
+        </div>
+
+        <div class="flex items-baseline gap-4">
+          <p class="product-price text-3xl font-black text-brand">$200.00 - $240.00</p>
+        </div>
+
+        <span
+          class="shipping-note text-xs font-semibold text-green-500 bg-green-50 dark:bg-green-900/20 px-3 py-1.5 rounded-full inline-flex items-center gap-1.5">
+          <i class="fa-solid fa-truck text-[10px]"></i> Free Shipping
+        </span>
+
+        <p class="product-description text-gray-500 dark:text-gray-400 leading-relaxed text-sm">
+          Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris
+          vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu
+          ad litora torquent per conubia nostra, per inceptos himenaeos.
+          Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum
+          sit amet a augue. Sed non neque elit sed.
+        </p>
+
+        <!-- Color Swatches -->
+        <div>
+          <span class="text-xs font-black dark:text-white uppercase tracking-widest mb-3 block">Color</span>
+          <div class="product-colors flex gap-3">
+            <div
+              class="color color-blue w-9 h-9 bg-blue-500 rounded-full cursor-pointer border-2 border-transparent hover:scale-110 transition-all ring-2 ring-transparent hover:ring-brand ring-offset-2 dark:ring-offset-dark"
+              data-color="Blue"></div>
+            <div
+              class="color color-green w-9 h-9 bg-green-500 rounded-full cursor-pointer border-2 border-transparent hover:scale-110 transition-all ring-2 ring-transparent hover:ring-brand ring-offset-2 dark:ring-offset-dark"
+              data-color="Green"></div>
+            <div
+              class="color color-red w-9 h-9 bg-red-500 rounded-full cursor-pointer border-2 border-transparent hover:scale-110 transition-all ring-2 ring-transparent hover:ring-brand ring-offset-2 dark:ring-offset-dark"
+              data-color="Red"></div>
+          </div>
+        </div>
+
+        <hr class="border-gray-100 dark:border-gray-800" />
+
+        <!-- Add to Cart -->
+        <div class="add-to-cart flex gap-3">
+          <div class="flex items-center border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+            <button class="qty-minus px-3 py-3 text-gray-500 hover:text-brand transition-all text-sm"><i
+                class="fa-solid fa-minus"></i></button>
+            <input type="number" value="1" min="1"
+              class="w-12 text-center py-3 bg-transparent dark:text-white border-none focus:outline-none text-sm font-semibold" />
+            <button class="qty-plus px-3 py-3 text-gray-500 hover:text-brand transition-all text-sm"><i
+                class="fa-solid fa-plus"></i></button>
+          </div>
+          <button
+            class="btn-add-cart btn-shimmer flex-1 text-white font-bold py-3 px-8 rounded-xl transition-all uppercase tracking-wider text-sm shadow-lg hover:shadow-brand/30">
+            <i class="fa-solid fa-bag-shopping mr-2"></i> Add to Cart
+          </button>
+        </div>
+
+        <!-- Wishlist & Share -->
+        <div class="flex gap-4">
+          <button class="flex items-center gap-2 text-xs text-gray-400 hover:text-brand transition-all">
+            <i class="fa-regular fa-heart"></i> Add to Wishlist
+          </button>
+          <button class="flex items-center gap-2 text-xs text-gray-400 hover:text-brand transition-all">
+            <i class="fa-solid fa-share-nodes"></i> Share
+          </button>
+        </div>
+
+        <hr class="border-gray-100 dark:border-gray-800" />
+
+        <div class="product-meta text-xs text-gray-400 dark:text-gray-500 space-y-2">
+          <span class="sku block">SKU: N/A</span>
+          <span class="category block">Category: <a
+              class="category-link text-brand hover:text-brand-dark transition-all"
+              href="/pages/shop.html?category=Men">Men</a></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Tabs -->
+    <div class="product-tabs mb-20">
+      <div class="bg-gray-50 dark:bg-dark-secondary rounded-2xl p-2 inline-flex gap-1 mb-10">
+        <button
+          class="tabActive px-6 py-3 rounded-xl text-sm font-bold bg-white dark:bg-dark text-brand shadow-sm cursor-pointer transition-all"
+          data-tab="description">Description</button>
+        <button
+          class="tab px-6 py-3 rounded-xl text-sm font-semibold text-gray-500 dark:text-gray-400 hover:text-brand cursor-pointer transition-all"
+          data-tab="additional">Additional Info</button>
+        <button
+          class="tab px-6 py-3 rounded-xl text-sm font-semibold text-gray-500 dark:text-gray-400 hover:text-brand cursor-pointer transition-all"
+          data-tab="reviews">Reviews (0)</button>
+      </div>
+
+      <div class="tabs-content">
+        <div class="tab-panel" id="description">
+          <h2 class="text-2xl font-black mb-4 dark:text-white">Product Description</h2>
+          <p class="text-gray-500 dark:text-gray-400 leading-relaxed mb-4 text-sm max-w-3xl">
+            Since it's creation lorem ipsum dolor sit amet, consectetur
+            adipisicing elit, sed do eiusmod tempor incididnt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.
+          </p>
+          <p class="text-gray-500 dark:text-gray-400 leading-relaxed mb-10 text-sm max-w-3xl">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident.
+          </p>
+
+          <div class="product-gallery grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <img class="gallery-item item-1 w-full h-auto rounded-2xl shadow-sm hover:shadow-lg transition-all"
+              src="/assets/images/product-about-01.jpg" />
+            <img class="gallery-item item-2 w-full h-auto rounded-2xl shadow-sm hover:shadow-lg transition-all"
+              src="/assets/images/product-about-04.jpg" />
+            <img class="gallery-item item-3 w-full h-auto rounded-2xl shadow-sm hover:shadow-lg transition-all"
+              src="/assets/images/product-about-02.jpg" />
+            <div
+              class="gallery-text item-4 bg-gray-50 dark:bg-dark-secondary p-8 rounded-2xl border border-gray-100 dark:border-gray-800">
+              <strong class="block text-base font-black mb-2 dark:text-white">Ut enim ad minim</strong>
+              <p class="text-gray-500 dark:text-gray-400 mb-4 text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                do eiusmod tempor incididunt.
+              </p>
+              <strong class="block text-base font-black mb-2 dark:text-white">Quis nostrud</strong>
+              <p class="text-gray-500 dark:text-gray-400 mb-4 text-sm">Sed do eiusmod tempor incididunt ut labore.</p>
+              <strong class="block text-base font-black mb-2 dark:text-white">Duis aute irure</strong>
+              <p class="text-gray-500 dark:text-gray-400 text-sm">
+                Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore.
+              </p>
+            </div>
+            <div
+              class="gallery-text item-5 bg-gray-50 dark:bg-dark-secondary p-8 rounded-2xl border border-gray-100 dark:border-gray-800">
+              <strong class="block text-base font-black mb-2 dark:text-white">More about the product</strong>
+              <p class="text-gray-500 dark:text-gray-400 text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in.
+              </p>
+            </div>
+            <img class="gallery-item item-6 w-full h-auto rounded-2xl shadow-sm hover:shadow-lg transition-all"
+              src="/assets/images/product-about-03.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Products -->
+    <div class="related-products">
+      <div class="text-center mb-12 space-y-3">
+        <span class="text-brand font-bold uppercase tracking-[0.2em] text-xs">You May Also Like</span>
+        <h2 class="text-3xl lg:text-4xl font-black dark:text-white">Related Products</h2>
+        <div class="w-16 h-1 bg-brand mx-auto rounded-full"></div>
+      </div>
+      <div class="products-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"></div>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+  <script type="module" src="/js/pages/product.js"></script>
+</body>
+
+</html>

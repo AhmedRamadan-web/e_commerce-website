@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | DNK Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#0084d6',
+                            light: '#b1d8ff',
+                            dark: '#0075be',
+                        },
+                        dark: '#0b1517',
+                        'dark-secondary': '#182326',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+    </style>
+</head>
+
+<body class="bg-white dark:bg-[#0b1517] font-['Lato']">
+    <div id="nav"></div>
+
+    <!-- Shop Hero Banner -->
+    <div class="relative pt-[102px]">
+        <div class="bg-gradient-to-br from-gray-900 via-[#001127] to-[#001a3a] py-16 px-4 overflow-hidden">
+            <!-- Decorative Elements -->
+            <div class="absolute top-0 right-0 w-[300px] h-[300px] bg-brand/5 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 w-[200px] h-[200px] bg-brand/10 rounded-full blur-3xl"></div>
+
+            <div class="max-w-[88%] mx-auto relative z-10">
+                <div class="animate-fade-in-up">
+                    <nav class="flex items-center gap-2 text-xs text-white/40 mb-4">
+                        <a href="/index.html" class="hover:text-white transition-colors">Home</a>
+                        <i class="fa-solid fa-chevron-right text-[8px]"></i>
+                        <span class="text-white/80">Shop</span>
+                    </nav>
+                    <h1 class="text-4xl lg:text-5xl font-black text-white tracking-tight">Our Collection</h1>
+                    <p class="text-white/50 mt-3 text-base max-w-md font-light">Discover premium fashion curated for
+                        your unique style.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shop-page min-h-screen py-10">
+        <div class="max-w-[95%] mx-auto flex gap-8">
+            <!-- Sidebar -->
+            <div class="side-bar w-[300px] hidden lg:block">
+                <div id="option"
+                    class="option-area-container bg-white dark:bg-dark-secondary p-6 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-800 space-y-8 sticky top-28">
+                    <button class="hide-button hidden p-2 text-brand hover:text-brand-dark" id="filter-list-btn"><i
+                            class="fa-solid fa-arrow-left-long"></i></button>
+
+                    <!-- Search Box -->
+                    <div class="search-box">
+                        <div
+                            class="flex rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 focus-within:border-brand transition-all">
+                            <input type="text" placeholder="Search products..."
+                                class="flex-1 px-4 py-3 bg-gray-50 dark:bg-dark dark:text-white border-none outline-none text-sm" />
+                            <button class="px-4 bg-brand hover:bg-brand-dark text-white transition-all"><i
+                                    class="fa-solid fa-magnifying-glass text-sm"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Price Filter -->
+                    <div class="filter-box">
+                        <h3
+                            class="text-xs font-black mb-4 dark:text-white uppercase tracking-widest flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-brand inline-block"></span>
+                            Filter by Price
+                        </h3>
+                        <div class="range-slider relative h-1 bg-gray-200 dark:bg-gray-700 rounded my-6">
+                            <div class="progress absolute h-full bg-brand rounded"></div>
+                            <input type="range"
+                                class="range-min absolute w-full h-1 bg-transparent appearance-none pointer-events-auto cursor-pointer"
+                                min="0" max="300" value="0" step="10">
+                            <input type="range"
+                                class="range-max absolute w-full h-1 bg-transparent appearance-none pointer-events-auto cursor-pointer"
+                                min="0" max="300" value="300" step="10">
+                        </div>
+
+                        <div class="price-input flex gap-4 justify-between">
+                            <div class="field flex flex-col gap-1">
+                                <span class="text-xs text-gray-400 uppercase tracking-wider">Min</span>
+                                <input type="number"
+                                    class="input-min w-20 px-3 py-2 border border-gray-200 dark:border-gray-700 dark:bg-dark dark:text-white rounded-lg text-sm font-semibold"
+                                    value="200" readonly>
+                            </div>
+                            <div class="field flex flex-col gap-1">
+                                <span class="text-xs text-gray-400 uppercase tracking-wider">Max</span>
+                                <input type="number"
+                                    class="input-max w-20 px-3 py-2 border border-gray-200 dark:border-gray-700 dark:bg-dark dark:text-white rounded-lg text-sm font-semibold"
+                                    value="800" readonly>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="category-box">
+                        <h3
+                            class="text-xs font-black mb-4 dark:text-white uppercase tracking-widest flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-brand inline-block"></span>
+                            Categories
+                        </h3>
+
+                        <ul class="ul-category-box space-y-1">
+                            <li class="Accessories-list">
+                                <a href="#"
+                                    class="flex justify-between items-center px-4 py-2.5 text-gray-600 dark:text-gray-400 hover:bg-brand/5 dark:hover:bg-brand/10 hover:text-brand rounded-xl transition-all text-sm">
+                                    <span class="title">Accessories</span>
+                                    <span
+                                        class="count text-xs text-gray-400 bg-gray-100 dark:bg-dark px-2 py-0.5 rounded-full">(10)</span>
+                                </a>
+                            </li>
+
+                            <li class="men-list">
+                                <a href="#"
+                                    class="flex justify-between items-center px-4 py-2.5 text-gray-600 dark:text-gray-400 hover:bg-brand/5 dark:hover:bg-brand/10 hover:text-brand rounded-xl transition-all text-sm">
+                                    <span class="title">Men</span>
+                                    <span
+                                        class="count text-xs text-gray-400 bg-gray-100 dark:bg-dark px-2 py-0.5 rounded-full">(12)</span>
+                                </a>
+                            </li>
+                            <li class="women-list">
+                                <a href="#"
+                                    class="flex justify-between items-center px-4 py-2.5 text-gray-600 dark:text-gray-400 hover:bg-brand/5 dark:hover:bg-brand/10 hover:text-brand rounded-xl transition-all text-sm">
+                                    <span class="title">Women</span>
+                                    <span
+                                        class="count text-xs text-gray-400 bg-gray-100 dark:bg-dark px-2 py-0.5 rounded-full">(15)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Best Sellers -->
+                    <div class="our-best-sellers">
+                        <h3
+                            class="our-best-sellers-title text-xs font-black mb-4 dark:text-white uppercase tracking-widest flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-brand inline-block"></span>
+                            Best Sellers
+                        </h3>
+                        <ul class="our-best-sellers-list space-y-4">
+                            <li class="best-seller-item flex gap-3 pb-4 border-b border-gray-100 dark:border-gray-800">
+                                <a href="#" class="product-img shrink-0">
+                                    <img width="64" height="64" src="../assets/images/product1.jpg"
+                                        alt="Anchor Bracelet" class="rounded-xl object-cover" />
+                                </a>
+
+                                <div class="best-seller-info flex flex-col gap-1">
+                                    <a href="#">
+                                        <h3
+                                            class="product-name text-sm font-bold text-gray-800 dark:text-gray-200 hover:text-brand transition-all">
+                                            Anchor Bracelet</h3>
+                                    </a>
+
+                                    <div class="rating flex gap-0.5 text-amber-400 text-xs">
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-regular fa-star star"></i>
+                                    </div>
+
+                                    <div class="price flex gap-2 text-sm">
+                                        <span class="original-price text-gray-300 line-through">$150.00</span>
+                                        <span class="current-price text-brand font-bold">$120.00</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="best-seller-item flex gap-3 pb-4 border-b border-gray-100 dark:border-gray-800">
+                                <a href="#" class="product-img shrink-0">
+                                    <img width="64" height="64" src="../assets/images/product1.jpg"
+                                        alt="Anchor Bracelet" class="rounded-xl object-cover" />
+                                </a>
+
+                                <div class="best-seller-info flex flex-col gap-1">
+                                    <a href="#">
+                                        <h3
+                                            class="product-name text-sm font-bold text-gray-800 dark:text-gray-200 hover:text-brand transition-all">
+                                            Anchor Bracelet</h3>
+                                    </a>
+
+                                    <div class="rating flex gap-0.5 text-amber-400 text-xs">
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-regular fa-star star"></i>
+                                    </div>
+
+                                    <div class="price flex gap-2 text-sm">
+                                        <span class="original-price text-gray-300 line-through">$150.00</span>
+                                        <span class="current-price text-brand font-bold">$120.00</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="best-seller-item flex gap-3 pb-4 border-b border-gray-100 dark:border-gray-800">
+                                <a href="#" class="product-img shrink-0">
+                                    <img width="64" height="64" src="../assets/images/product1.jpg"
+                                        alt="Anchor Bracelet" class="rounded-xl object-cover" />
+                                </a>
+
+                                <div class="best-seller-info flex flex-col gap-1">
+                                    <a href="#">
+                                        <h3
+                                            class="product-name text-sm font-bold text-gray-800 dark:text-gray-200 hover:text-brand transition-all">
+                                            Anchor Bracelet</h3>
+                                    </a>
+
+                                    <div class="rating flex gap-0.5 text-amber-400 text-xs">
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-regular fa-star star"></i>
+                                    </div>
+
+                                    <div class="price flex gap-2 text-sm">
+                                        <span class="original-price text-gray-300 line-through">$150.00</span>
+                                        <span class="current-price text-brand font-bold">$120.00</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="best-seller-item flex gap-3 pb-4 border-b border-gray-100 dark:border-gray-800">
+                                <a href="#" class="product-img shrink-0">
+                                    <img width="64" height="64" src="../assets/images/product1.jpg"
+                                        alt="Anchor Bracelet" class="rounded-xl object-cover" />
+                                </a>
+
+                                <div class="best-seller-info flex flex-col gap-1">
+                                    <a href="#">
+                                        <h3
+                                            class="product-name text-sm font-bold text-gray-800 dark:text-gray-200 hover:text-brand transition-all">
+                                            Anchor Bracelet</h3>
+                                    </a>
+
+                                    <div class="rating flex gap-0.5 text-amber-400 text-xs">
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-regular fa-star star"></i>
+                                    </div>
+
+                                    <div class="price flex gap-2 text-sm">
+                                        <span class="original-price text-gray-300 line-through">$150.00</span>
+                                        <span class="current-price text-brand font-bold">$120.00</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="best-seller-item flex gap-3">
+                                <a href="#" class="product-img shrink-0">
+                                    <img width="64" height="64" src="../assets/images/product1.jpg"
+                                        alt="Anchor Bracelet" class="rounded-xl object-cover" />
+                                </a>
+
+                                <div class="best-seller-info flex flex-col gap-1">
+                                    <a href="#">
+                                        <h3
+                                            class="product-name text-sm font-bold text-gray-800 dark:text-gray-200 hover:text-brand transition-all">
+                                            Anchor Bracelet</h3>
+                                    </a>
+
+                                    <div class="rating flex gap-0.5 text-amber-400 text-xs">
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-regular fa-star star"></i>
+                                    </div>
+
+                                    <div class="price flex gap-2 text-sm">
+                                        <span class="original-price text-gray-300 line-through">$150.00</span>
+                                        <span class="current-price text-brand font-bold">$120.00</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Section -->
+            <div class="products flex-1">
+                <div
+                    class="products-top flex items-center justify-between gap-4 mb-8 p-4 bg-white dark:bg-dark-secondary rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800">
+                    <button
+                        class="filter-btn lg:hidden p-3 bg-brand hover:bg-brand-dark text-white rounded-xl transition-all"
+                        id="filter-btn"><i class="fa-solid fa-filter"></i></button>
+
+                    <div class="flex items-center gap-2 text-xs text-gray-400">
+                        <i class="fa-solid fa-grip text-brand"></i>
+                        <span>Showing results</span>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <select name="shown-items" id="shown-item"
+                            class="px-4 py-2.5 border border-gray-200 dark:border-gray-700 dark:bg-dark dark:text-white rounded-xl text-xs cursor-pointer font-semibold focus:border-brand focus:outline-none transition-all">
+                            <option value="12">12 items</option>
+                            <option value="16">16 items</option>
+                            <option value="all">All items</option>
+                        </select>
+                        <select name="sort-item" id="sort-item"
+                            class="px-4 py-2.5 border border-gray-200 dark:border-gray-700 dark:bg-dark dark:text-white rounded-xl text-xs cursor-pointer font-semibold focus:border-brand focus:outline-none transition-all">
+                            <option value="featured">Featured</option>
+                            <option value="price-low-to-high">Price: Low → High</option>
+                            <option value="price-high to low">Price: High → Low</option>
+                            <option value="newest">Newest</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="products-items grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                    <!-- Product cards will be generated by JavaScript using productcard template -->
+                </div>
+                <div id="pagination" class="pagination-container mt-12 flex justify-center"></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div id="footer"></div>
+    <script type="module" src="/js/pages/shop.js"></script>
+</body>
+
+</html>

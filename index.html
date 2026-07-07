@@ -1,0 +1,282 @@
+<html>
+
+<head>
+  <meta name="description" content="DNK store for buying online" />
+  <meta charset="utf-8" />
+  <meta name="keywords" content="dnk, shop, store" />
+  <meta name="auther" content="Bashir Alansary" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DNK Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#0084d6',
+              light: '#b1d8ff',
+              dark: '#0075be',
+            },
+            dark: '#0b1517',
+            'dark-secondary': '#182326',
+            'bg-main': 'var(--bg)',
+            'bg-secondary': 'var(--secondary-bg)',
+            'text-primary': 'var(--primary-color)',
+          },
+          fontFamily: {
+            lato: ['Lato', 'sans-serif'],
+            mulish: ['Mulish', 'sans-serif'],
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+            'fade-in-up-d1': 'fadeInUp 0.8s ease-out 0.2s forwards',
+            'fade-in-up-d2': 'fadeInUp 0.8s ease-out 0.4s forwards',
+            'slide-in-left': 'slideInLeft 0.8s ease-out 0.6s forwards',
+            'pulse-glow': 'pulse-glow 2s infinite',
+          },
+          keyframes: {
+            fadeInUp: {
+              'from': { opacity: '0', transform: 'translateY(30px)' },
+              'to': { opacity: '1', transform: 'translateY(0)' },
+            },
+            slideInLeft: {
+              'from': { opacity: '0', transform: 'translateX(-40px)' },
+              'to': { opacity: '1', transform: 'translateX(0)' },
+            },
+            'pulse-glow': {
+              '0%, 100%': { boxShadow: '0 0 20px rgba(0, 132, 214, 0.3)' },
+              '50%': { boxShadow: '0 0 40px rgba(0, 132, 214, 0.6)' },
+            }
+          },
+          container: {
+            center: true,
+            padding: '1rem',
+            screens: {
+              xl: '1200px',
+            },
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --bg: #fff;
+      --secondary-bg: #f7f7f7;
+      --primary-color: #000;
+      --overlay: rgb(0 0 0 / 55%);
+    }
+
+    .dark {
+      --bg: #0b1517;
+      --secondary-bg: #182326;
+      --primary-color: #fff;
+      --overlay: rgb(0 0 0 / 80%);
+    }
+  </style>
+</head>
+
+<body class="font-lato bg-white dark:bg-[#0b1517] text-black dark:text-white m-0 p-0">
+  <div class="wrap">
+    <!-- Hero Section -->
+    <div
+      class="header relative h-[100vh] min-h-[700px] bg-[url('/assets/images/header-bg.jpg')] bg-fixed bg-cover bg-center">
+      <div
+        class="overlay h-full w-full absolute inset-0 z-[2] bg-gradient-to-b from-black/30 via-black/50 to-black/80 pt-[102px]">
+        <!-- Navbar Section -->
+        <div id="nav"></div>
+
+        <!-- Hero Content -->
+        <div class="hero h-full flex items-center">
+          <div class="w-[88%] mx-auto">
+            <div class="hero-content w-full lg:w-1/2 space-y-6">
+              <!-- Animated Badge -->
+              <div class="animate-fade-in-up">
+                <span
+                  class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white/90 text-xs font-semibold uppercase tracking-[3px]">
+                  <span class="w-2 h-2 rounded-full bg-brand animate-pulse"></span>
+                  New Collection 2026
+                </span>
+              </div>
+
+              <h1
+                class="animate-fade-in-up-d1 text-[48px] lg:text-[72px] text-white leading-[1.1] font-black tracking-tight">
+                Raining Offers<br>For <span class="text-brand">Hot Summer!</span>
+              </h1>
+
+              <p
+                class="animate-fade-in-up-d2 text-white/60 text-lg lg:text-xl max-w-[480px] font-light leading-relaxed">
+                Discover exclusive deals with <span class="text-white font-semibold">25% Off</span> on all products.
+                Elevate your style today.
+              </p>
+
+              <div class="hero-btns flex flex-col sm:flex-row gap-4 animate-slide-in-left">
+                <a href="/pages/shop.html"
+                  class="group px-8 py-4 bg-brand hover:bg-brand-dark font-semibold text-sm uppercase tracking-wider text-white transition-all duration-500 rounded-xl shadow-lg hover:shadow-brand/40 flex items-center justify-center gap-3">
+                  Shop Now
+                  <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </a>
+                <a href="#featured-section"
+                  class="px-8 py-4 border border-white/30 font-semibold text-sm uppercase tracking-wider bg-white/5 backdrop-blur-sm text-white hover:bg-white hover:text-black transition-all duration-500 rounded-xl flex items-center justify-center">
+                  Explore
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/40">
+          <span class="text-[10px] uppercase tracking-[3px]">Scroll</span>
+          <div class="w-[1px] h-8 bg-gradient-to-b from-white/40 to-transparent animate-bounce"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Brands Section -->
+    <div class="brands py-16 bg-white dark:bg-dark-secondary">
+      <div class="w-[88%] mx-auto">
+        <div class="flex justify-between items-center gap-6 flex-wrap">
+          <div
+            class="brand-logo flex-1 min-w-[140px] h-[100px] flex items-center justify-center bg-gray-50 dark:bg-dark rounded-2xl grayscale hover:grayscale-0 transition-all duration-500 hover:shadow-lg hover:-translate-y-1 border border-gray-100 dark:border-gray-800">
+            <img src="/assets/images/brand1.png" alt="brand1"
+              class="max-h-10 opacity-60 hover:opacity-100 transition-opacity" />
+          </div>
+          <div
+            class="brand-logo flex-1 min-w-[140px] h-[100px] flex items-center justify-center bg-gray-50 dark:bg-dark rounded-2xl grayscale hover:grayscale-0 transition-all duration-500 hover:shadow-lg hover:-translate-y-1 border border-gray-100 dark:border-gray-800">
+            <img src="/assets/images/brand2.png" alt="brand2"
+              class="max-h-10 opacity-60 hover:opacity-100 transition-opacity" />
+          </div>
+          <div
+            class="brand-logo flex-1 min-w-[140px] h-[100px] flex items-center justify-center bg-gray-50 dark:bg-dark rounded-2xl grayscale hover:grayscale-0 transition-all duration-500 hover:shadow-lg hover:-translate-y-1 border border-gray-100 dark:border-gray-800">
+            <img src="/assets/images/brand3.png" alt="brand3"
+              class="max-h-10 opacity-60 hover:opacity-100 transition-opacity" />
+          </div>
+          <div
+            class="brand-logo flex-1 min-w-[140px] h-[100px] flex items-center justify-center bg-gray-50 dark:bg-dark rounded-2xl grayscale hover:grayscale-0 transition-all duration-500 hover:shadow-lg hover:-translate-y-1 border border-gray-100 dark:border-gray-800">
+            <img src="/assets/images/brand4.png" alt="brand4"
+              class="max-h-10 opacity-60 hover:opacity-100 transition-opacity" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offers Section -->
+    <div class="offers py-20 bg-white dark:bg-dark">
+      <div class="w-[88%] mx-auto">
+        <!-- Section Header -->
+        <div class="text-center mb-16 space-y-4">
+          <span class="text-brand font-bold uppercase tracking-[0.2em] text-sm">Curated For You</span>
+          <h2 class="text-4xl lg:text-5xl font-black dark:text-white">Trending Offers</h2>
+          <div class="w-20 h-1 bg-brand mx-auto rounded-full"></div>
+        </div>
+
+        <div class="offers-content grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div
+            class="offer-card relative h-[500px] rounded-3xl overflow-hidden bg-[url('/assets/images/offer1.png')] bg-cover bg-center group cursor-pointer">
+            <div
+              class="overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent group-hover:from-black/90 transition-all duration-500 p-8 flex flex-col justify-end">
+              <div class="text-bx transform group-hover:-translate-y-2 transition-transform duration-500">
+                <span class="text-brand text-xs font-bold uppercase tracking-widest mb-2 block">Limited Time</span>
+                <h3 class="text-2xl lg:text-3xl text-white font-black mb-3">20% Off On Tank Tops</h3>
+                <p class="text-white/70 mb-6 text-sm leading-relaxed max-w-[300px]">
+                  Premium quality, timeless design. Elevate your everyday wardrobe.
+                </p>
+                <a href="/pages/shop.html"
+                  class="inline-flex items-center gap-2 px-6 py-3 bg-white text-black font-bold text-xs uppercase tracking-wider rounded-xl hover:bg-brand hover:text-white transition-all duration-300 shadow-lg">
+                  Shop now <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="offer-card relative h-[500px] rounded-3xl overflow-hidden bg-[url('/assets/images/offer2.png')] bg-cover bg-center group cursor-pointer">
+            <div
+              class="overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent group-hover:from-black/90 transition-all duration-500 p-8 flex flex-col justify-end">
+              <div class="text-bx transform group-hover:-translate-y-2 transition-transform duration-500">
+                <span class="text-brand text-xs font-bold uppercase tracking-widest mb-2 block">Exclusive</span>
+                <h3 class="text-2xl lg:text-3xl text-white font-black mb-3">Latest Eyewear For You</h3>
+                <p class="text-white/70 mb-6 text-sm leading-relaxed max-w-[300px]">
+                  See the world through premium lenses. Style meets function.
+                </p>
+                <a href="/pages/shop.html"
+                  class="inline-flex items-center gap-2 px-6 py-3 bg-white text-black font-bold text-xs uppercase tracking-wider rounded-xl hover:bg-brand hover:text-white transition-all duration-300 shadow-lg">
+                  Shop now <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="offer-card relative h-[500px] rounded-3xl overflow-hidden bg-[url('/assets/images/offer3.png')] bg-cover bg-center group cursor-pointer">
+            <div
+              class="overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent group-hover:from-black/90 transition-all duration-500 p-8 flex flex-col justify-end">
+              <div class="text-bx transform group-hover:-translate-y-2 transition-transform duration-500">
+                <span class="text-brand text-xs font-bold uppercase tracking-widest mb-2 block">New Arrival</span>
+                <h3 class="text-2xl lg:text-3xl text-white font-black mb-3">Let's Suit Up!</h3>
+                <p class="text-white/70 mb-6 text-sm leading-relaxed max-w-[300px]">
+                  Tailored perfection for the modern gentleman.
+                </p>
+                <a href="/pages/shop.html"
+                  class="inline-flex items-center gap-2 px-6 py-3 bg-white text-black font-bold text-xs uppercase tracking-wider rounded-xl hover:bg-brand hover:text-white transition-all duration-300 shadow-lg">
+                  Check out <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Section -->
+    <div class="featured py-24 bg-gray-50 dark:bg-dark-secondary" id="featured-section">
+      <div class="w-[88%] mx-auto">
+        <div class="text-center mb-16 space-y-4">
+          <span class="text-brand font-bold uppercase tracking-[0.2em] text-sm">Handpicked</span>
+          <h2 class="text-4xl lg:text-5xl font-black text-black dark:text-white">Featured Products</h2>
+          <div class="w-20 h-1 bg-brand mx-auto rounded-full"></div>
+        </div>
+        <div class="featured-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"></div>
+      </div>
+    </div>
+
+    <!-- Newsletter / CTA Section -->
+    <div class="relative py-28 bg-gradient-to-br from-brand via-brand-dark to-[#001a3a] overflow-hidden">
+      <!-- Decorative circles -->
+      <div class="absolute top-[-80px] right-[-80px] w-[300px] h-[300px] rounded-full border border-white/10"></div>
+      <div class="absolute bottom-[-60px] left-[-60px] w-[200px] h-[200px] rounded-full border border-white/10"></div>
+
+      <div class="w-[88%] mx-auto relative z-10 text-center space-y-8">
+        <h2 class="text-4xl lg:text-5xl font-black text-white leading-tight">
+          Stay Ahead of <br class="hidden md:block">the Trends
+        </h2>
+        <p class="text-white/60 text-lg max-w-xl mx-auto font-light">
+          Subscribe to our newsletter and get exclusive access to new arrivals, special offers, and style tips.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+          <input type="email" placeholder="Enter your email"
+            class="flex-1 px-6 py-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder:text-white/40 focus:outline-none focus:border-white/50 transition-all text-sm" />
+          <button
+            class="px-8 py-4 bg-white text-brand-dark font-bold text-sm uppercase tracking-wider rounded-xl hover:bg-gray-100 transition-all shadow-lg">
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer"></div>
+  </div>
+  <script type="module" src="/js/pages/home.js"></script>
+</body>
+
+</html>

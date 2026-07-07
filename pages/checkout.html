@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout - DNK Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#0084d6',
+              light: '#b1d8ff',
+              dark: '#0075be',
+            },
+            dark: '#0b1517',
+            'dark-secondary': '#182326',
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    @keyframes shimmer {
+      0% {
+        background-position: -200% 0;
+      }
+
+      100% {
+        background-position: 200% 0;
+      }
+    }
+
+    .btn-shimmer {
+      background: linear-gradient(90deg, #0084d6 0%, #33a3e8 40%, #0084d6 80%);
+      background-size: 200% 100%;
+      animation: shimmer 3s infinite;
+    }
+
+    .btn-shimmer:disabled {
+      animation: none;
+      background: #9ca3af;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 dark:bg-[#0b1517] font-['Lato']">
+  <div id="nav"></div>
+
+  <div class="pt-[102px]">
+    <div class="bg-gradient-to-br from-gray-900 via-[#001127] to-[#001a3a] py-12 px-4 relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-[250px] h-[250px] bg-brand/5 rounded-full blur-3xl"></div>
+      <div class="max-w-[88%] mx-auto relative z-10">
+        <nav class="flex items-center gap-2 text-xs text-white/40 mb-3">
+          <a href="/index.html" class="hover:text-white transition-colors">Home</a>
+          <i class="fa-solid fa-chevron-right text-[8px]"></i>
+          <span class="text-white/80">Checkout</span>
+        </nav>
+        <h1 class="text-3xl lg:text-4xl font-black text-white tracking-tight">Checkout</h1>
+
+        <div class="flex items-center gap-3 mt-6">
+          <div class="flex items-center gap-2">
+            <span
+              class="w-8 h-8 rounded-full bg-brand text-white text-xs font-bold flex items-center justify-center">1</span>
+            <span class="text-white/80 text-xs font-semibold hidden sm:block">Contact</span>
+          </div>
+          <div class="flex-1 h-[1px] bg-white/20 max-w-[60px]"></div>
+          <div class="flex items-center gap-2">
+            <span
+              class="w-8 h-8 rounded-full bg-white/10 text-white/40 text-xs font-bold flex items-center justify-center">2</span>
+            <span class="text-white/40 text-xs font-semibold hidden sm:block">Billing</span>
+          </div>
+          <div class="flex-1 h-[1px] bg-white/20 max-w-[60px]"></div>
+          <div class="flex items-center gap-2">
+            <span
+              class="w-8 h-8 rounded-full bg-white/10 text-white/40 text-xs font-bold flex items-center justify-center">3</span>
+            <span class="text-white/40 text-xs font-semibold hidden sm:block">Payment</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="order-summary lg:hidden bg-white dark:bg-dark-secondary border-b border-gray-200 dark:border-gray-700">
+    <div class="order-summary-header p-4">
+      <div class="order-summary-toggle">
+        <button id="toggleSummary" aria-expanded="false"
+          class="w-full flex justify-between items-center text-brand hover:text-brand-dark font-semibold text-sm">
+          <span class="toggle-text flex items-center gap-2"><i class="fa-solid fa-bag-shopping"></i> Show Order
+            Summary</span>
+          <span class="toggle-price font-bold">$530.00</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="checkout-container max-w-[88%] mx-auto grid grid-cols-1 lg:grid-cols-5 gap-12 py-12">
+    <div class="checkout-details lg:col-span-3">
+      <form action="" class="space-y-10">
+        <div
+          class="contact checkout-form-section bg-white dark:bg-dark-secondary p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800">
+          <div class="contact-title-wrapper flex justify-between items-center mb-6">
+            <h2 class="checkout-form-title text-lg font-black dark:text-white flex items-center gap-2">
+              <span class="w-8 h-8 rounded-xl bg-brand/10 text-brand flex items-center justify-center text-sm"><i
+                  class="fa-solid fa-user"></i></span>
+              Contact
+            </h2>
+            <a href="/pages/login.html"
+              class="text-xs text-brand hover:text-brand-dark transition-all font-semibold">Already have an account?
+              Login</a>
+          </div>
+          <div class="input-wrapper">
+            <input type="text" placeholder="Email Address" name="email"
+              class="w-full px-5 py-3.5 bg-gray-50 dark:bg-dark border border-gray-200 dark:border-gray-700 dark:text-white rounded-xl focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition-all text-sm" />
+          </div>
+        </div>
+
+        <div
+          class="billing-deatils checkout-form-section bg-white dark:bg-dark-secondary p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800">
+          <h2 class="checkout-form-title text-lg font-black mb-6 dark:text-white flex items-center gap-2">
+            <span class="w-8 h-8 rounded-xl bg-brand/10 text-brand flex items-center justify-center text-sm"><i
+                class="fa-solid fa-location-dot"></i></span>
+            Billing Details
+          </h2>
+          <div class="address-section space-y-4">
+            <div class="multiple-input-wrapper grid grid-cols-2 gap-4">
+              <div class="input-wrapper">
+                <input type="text" placeholder="First Name *" name="fName"
+                  class="w-full px-5 py-3.5 bg-gray-50 dark:bg-dark border border-gray-200 dark:border-gray-700 dark:text-white rounded-xl focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition-all text-sm" />
+              </div>
+              <div class="input-wrapper">
+                <input type="text" placeholder="Last Name *" name="lName"
+                  class="w-full px-5 py-3.5 bg-gray-50 dark:bg-dark border border-gray-200 dark:border-gray-700 dark:text-white rounded-xl focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition-all text-sm" />
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <select
+                class="form-select w-full px-5 py-3.5 bg-gray-50 dark:bg-dark border border-gray-200 dark:border-gray-700 dark:text-white rounded-xl focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition-all text-sm"
+                autocomplete="country" name="country" required></select>
+            </div>
+            <div class="input-wrapper">
+              <input type="text" placeholder="House number and street name *" name="address"
+                class="w-full px-5 py-3.5 bg-gray-50 dark:bg-dark border border-gray-200 dark:border-gray-700 dark:text-white rounded-xl focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition-all text-sm" />
+            </div>
+            <div class="input-wrapper">
+              <input type="text" placeholder="Apartment, suite, unit, etc. (optional)" name="second-address"
+                class="w-full px-5 py-3.5 bg-gray-50 dark:bg-dark border border-gray-200 dark:border-gray-700 dark:text-white rounded-xl focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition-all text-sm" />
+            </div>
+            <div class="multiple-input-wrapper grid grid-cols-3 gap-4">
+              <div class="input-wrapper">
+                <input type="text" placeholder="Town/City *" name="city"
+                  class="w-full px-5 py-3.5 bg-gray-50 dark:bg-dark border border-gray-200 dark:border-gray-700 dark:text-white rounded-xl focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition-all text-sm" />
+              </div>
+              <div class="input-wrapper">
+                <select
+                  class="form-select w-full px-5 py-3.5 bg-gray-50 dark:bg-dark border border-gray-200 dark:border-gray-700 dark:text-white rounded-xl focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition-all text-sm"
+                  autocomplete="state" name="state" required></select>
+              </div>
+              <div class="input-wrapper">
+                <input type="text" placeholder="ZIP *" name="postal"
+                  class="w-full px-5 py-3.5 bg-gray-50 dark:bg-dark border border-gray-200 dark:border-gray-700 dark:text-white rounded-xl focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition-all text-sm" />
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <input type="text" placeholder="Phone *" name="phone"
+                class="w-full px-5 py-3.5 bg-gray-50 dark:bg-dark border border-gray-200 dark:border-gray-700 dark:text-white rounded-xl focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition-all text-sm" />
+            </div>
+          </div>
+          <div class="checkbox-wrapper flex items-center gap-3 mt-5">
+            <input type="checkbox" name="another-address" class="w-4 h-4 accent-brand cursor-pointer rounded" />
+            <label class="dark:text-gray-300 cursor-pointer text-sm">Ship to a different address?</label>
+          </div>
+          <div class="another-address-section"></div>
+          <textarea name="notes" rows="3" placeholder="Notes about your order, e.g. special notes for delivery."
+            class="w-full mt-4 px-5 py-3.5 bg-gray-50 dark:bg-dark border border-gray-200 dark:border-gray-700 dark:text-white rounded-xl focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition-all text-sm"></textarea>
+        </div>
+
+        <div
+          class="shipping checkout-form-section bg-white dark:bg-dark-secondary p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800">
+          <h2 class="checkout-form-title text-lg font-black mb-4 dark:text-white flex items-center gap-2">
+            <span class="w-8 h-8 rounded-xl bg-brand/10 text-brand flex items-center justify-center text-sm"><i
+                class="fa-solid fa-truck"></i></span>
+            Shipping
+          </h2>
+          <div
+            class="shipping-info invalid bg-amber-50 dark:bg-amber-900/10 border border-amber-200 dark:border-amber-800/40 p-4 rounded-xl flex items-start gap-3">
+            <i class="fa-solid fa-circle-info text-amber-500 mt-0.5"></i>
+            <p class="text-amber-700 dark:text-amber-400 text-sm">
+              There are no shipping options available. Please ensure that your
+              address has been entered correctly, or contact us if you need
+              any help.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="paymemt checkout-form-section bg-white dark:bg-dark-secondary p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800">
+          <h2 class="checkout-form-title text-lg font-black mb-6 dark:text-white flex items-center gap-2">
+            <span class="w-8 h-8 rounded-xl bg-brand/10 text-brand flex items-center justify-center text-sm"><i
+                class="fa-solid fa-credit-card"></i></span>
+            Payment
+          </h2>
+          <div class="payment-methods space-y-3">
+            <label
+              class="payment-option block p-4 border-2 border-gray-100 dark:border-gray-800 rounded-xl cursor-pointer hover:border-brand/50 transition-all has-[:checked]:border-brand has-[:checked]:bg-brand/5">
+              <div class="payment-info-wrapper flex items-center gap-3">
+                <input type="radio" name="payment" class="w-4 h-4 accent-brand" />
+                <span class="radio"></span>
+                <span class="title font-bold dark:text-white text-sm">Direct bank transfer</span>
+              </div>
+              <div class="payment-desc text-xs text-gray-500 dark:text-gray-400 mt-2 ml-7">
+                Make your payment directly into our bank account.
+              </div>
+            </label>
+
+            <label
+              class="payment-option block p-4 border-2 border-gray-100 dark:border-gray-800 rounded-xl cursor-pointer hover:border-brand/50 transition-all has-[:checked]:border-brand has-[:checked]:bg-brand/5">
+              <div class="payment-info-wrapper flex items-center gap-3">
+                <input type="radio" name="payment" class="w-4 h-4 accent-brand" />
+                <span class="radio"></span>
+                <span class="title font-bold dark:text-white text-sm">Check payments</span>
+              </div>
+              <div class="payment-desc text-xs text-gray-500 dark:text-gray-400 mt-2 ml-7">
+                Please send a check to the store address.
+              </div>
+            </label>
+
+            <label
+              class="payment-option block p-4 border-2 border-gray-100 dark:border-gray-800 rounded-xl cursor-pointer hover:border-brand/50 transition-all has-[:checked]:border-brand has-[:checked]:bg-brand/5">
+              <div class="payment-info-wrapper flex items-center gap-3">
+                <input type="radio" name="payment" class="w-4 h-4 accent-brand" />
+                <span class="radio"></span>
+                <span class="title font-bold dark:text-white text-sm">Cash on delivery</span>
+              </div>
+              <div class="payment-desc text-xs text-gray-500 dark:text-gray-400 mt-2 ml-7">Pay with cash upon delivery.
+              </div>
+            </label>
+
+            <label
+              class="payment-option block p-4 border-2 border-gray-100 dark:border-gray-800 rounded-xl cursor-pointer hover:border-brand/50 transition-all has-[:checked]:border-brand has-[:checked]:bg-brand/5">
+              <div class="payment-info-wrapper flex items-center gap-3">
+                <input type="radio" name="payment" class="w-4 h-4 accent-brand" />
+                <span class="radio"></span>
+                <span class="title font-bold dark:text-white text-sm flex items-center gap-2">
+                  PayPal
+                  <img class="cards h-5" src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" />
+                </span>
+              </div>
+              <div class="payment-desc text-xs text-gray-500 dark:text-gray-400 mt-2 ml-7">
+                Pay via PayPal; you can pay with your credit card if you don't
+                have a PayPal account.
+              </div>
+            </label>
+          </div>
+          <button type="submit"
+            class="submit btn-shimmer w-full mt-8 text-white font-bold py-4 rounded-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed uppercase tracking-wider text-sm shadow-lg"
+            disabled>
+            <i class="fa-solid fa-lock mr-2"></i> Place Order
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div
+      class="cart-view lg:col-span-2 bg-white dark:bg-dark-secondary p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 h-fit sticky top-28">
+      <h3 class="text-lg font-black dark:text-white mb-6 flex items-center gap-2">
+        <i class="fa-solid fa-bag-shopping text-brand"></i>
+        Order Summary
+      </h3>
+      <div class="items space-y-4 mb-6"></div>
+
+      <div class="coupon-section flex gap-2 mb-6">
+        <input type="text" placeholder="Coupon code"
+          class="flex-1 px-4 py-3 bg-gray-50 dark:bg-dark border border-gray-200 dark:border-gray-700 dark:text-white rounded-xl focus:outline-none focus:border-brand transition-all text-sm" />
+        <button
+          class="check-coupon px-5 py-3 bg-brand hover:bg-brand-dark text-white font-bold text-xs uppercase tracking-wider rounded-xl transition-all">Apply</button>
+      </div>
+
+      <div class="space-y-3 pt-4 border-t border-gray-100 dark:border-gray-800">
+        <div class="subtotal-section flex justify-between items-center">
+          <p class="cart-header text-sm text-gray-500 dark:text-gray-400">Subtotal</p>
+          <p class="section price font-semibold dark:text-white text-sm" id="subtotal">$ 360</p>
+        </div>
+        <div class="shipping-fees-section flex justify-between items-center">
+          <p class="cart-header text-sm text-gray-500 dark:text-gray-400">Shipping</p>
+          <p class="section price invalid text-amber-500 text-xs font-semibold" id="shipping">
+            Select address
+          </p>
+        </div>
+      </div>
+      <div class="total-section flex justify-between items-center mt-4 pt-4 border-t-2 border-brand/20">
+        <p class="cart-header text-base font-black dark:text-white">Total</p>
+        <p class="section price total-order text-xl font-black text-brand" id="total">$ 360</p>
+      </div>
+
+      <div class="mt-6 pt-4 border-t border-gray-100 dark:border-gray-800">
+        <div class="flex items-center justify-center gap-4 text-gray-300 dark:text-gray-600">
+          <div class="flex flex-col items-center gap-1">
+            <i class="fa-solid fa-shield-halved text-lg"></i>
+            <span class="text-[9px] uppercase tracking-wider">Secure</span>
+          </div>
+          <div class="flex flex-col items-center gap-1">
+            <i class="fa-solid fa-truck text-lg"></i>
+            <span class="text-[9px] uppercase tracking-wider">Free Ship</span>
+          </div>
+          <div class="flex flex-col items-center gap-1">
+            <i class="fa-solid fa-rotate-left text-lg"></i>
+            <span class="text-[9px] uppercase tracking-wider">Returns</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer"></div>
+  <script type="module" src="/js/pages/checkout.js"></script>
+</body>
+
+</html>

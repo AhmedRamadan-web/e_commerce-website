@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - DNK Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#0084d6',
+              light: '#b1d8ff',
+              dark: '#0075be',
+            },
+            dark: '#0b1517',
+            'dark-secondary': '#182326',
+          },
+          animation: {
+            'float': 'float 6s ease-in-out infinite',
+            'fade-in-up': 'fadeInUp 1s ease-out forwards',
+            'zoom-in': 'zoomIn 20s ease-out forwards',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-20px)' },
+            },
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(30px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            zoomIn: {
+              '0%': { transform: 'scale(1)' },
+              '100%': { transform: 'scale(1.1)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-white dark:bg-dark font-lato transition-colors duration-500">
+  <div id="nav"></div>
+
+  <div class="contact-container overflow-hidden pt-24">
+    <div class="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+      <div
+        class="absolute inset-0 z-0 bg-[url('/assets/images/banner-04.jpg')] bg-cover bg-fixed bg-center animate-zoom-in">
+      </div>
+      <div class="absolute inset-0 z-[1] bg-gradient-to-b from-black/70 via-black/40 to-black/20"></div>
+      <div class="relative z-10 text-center px-4 animate-fade-in-up">
+        <span class="inline-block text-brand tracking-[0.3em] uppercase text-sm font-bold mb-4 opacity-80">Get In
+          Touch</span>
+        <h1 class="text-6xl md:text-8xl font-black text-white tracking-tight leading-none mb-6">
+          Contact <span class="text-brand">Us</span>
+        </h1>
+        <div class="w-24 h-1 bg-brand mx-auto rounded-full"></div>
+      </div>
+    </div>
+
+    <div class="py-24 bg-white dark:bg-dark text-center">
+      <div class="max-w-3xl mx-auto px-4 space-y-6">
+        <span class="text-brand font-bold uppercase tracking-widest text-sm">Have any queries?</span>
+        <h2 class="text-4xl md:text-5xl font-black dark:text-white">We're here to help.</h2>
+        <div class="w-20 h-1 bg-brand mx-auto"></div>
+      </div>
+    </div>
+
+    <div class="pb-32 bg-white dark:bg-dark">
+      <div class="max-w-[88%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div
+          class="group relative bg-white dark:bg-dark-secondary p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-800 text-center hover:-translate-y-2">
+          <div
+            class="w-16 h-16 bg-brand/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-brand transition-all duration-500">
+            <i class="fas fa-shopping-cart text-brand group-hover:text-white text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-black dark:text-white mb-4">Sales</h3>
+          <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6">Vestibulum ante ipsum primis in
+            faucibus orci luctus.</p>
+          <a href="tel:18001234567" class="text-brand font-black text-xl hover:underline">1800 123 4567</a>
+        </div>
+
+        <div
+          class="group relative bg-white dark:bg-dark-secondary p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-800 text-center hover:-translate-y-2">
+          <div
+            class="w-16 h-16 bg-brand/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-brand transition-all duration-500">
+            <i class="fas fa-headset text-brand group-hover:text-white text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-black dark:text-white mb-4">Complaints</h3>
+          <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6">Vestibulum ante ipsum primis in
+            faucibus orci luctus.</p>
+          <a href="tel:19002238899" class="text-brand font-black text-xl hover:underline">1900 223 8899</a>
+        </div>
+
+        <div
+          class="group relative bg-white dark:bg-dark-secondary p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-800 text-center hover:-translate-y-2">
+          <div
+            class="w-16 h-16 bg-brand/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-brand transition-all duration-500">
+            <i class="fas fa-undo text-brand group-hover:text-white text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-black dark:text-white mb-4">Returns</h3>
+          <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6">Vestibulum ante ipsum primis in
+            faucibus orci luctus.</p>
+          <a href="mailto:returns@mail.com" class="text-brand font-black text-xl hover:underline">returns@mail.com</a>
+        </div>
+
+        <div
+          class="group relative bg-white dark:bg-dark-secondary p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-800 text-center hover:-translate-y-2">
+          <div
+            class="w-16 h-16 bg-brand/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-brand transition-all duration-500">
+            <i class="fas fa-bullhorn text-brand group-hover:text-white text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-black dark:text-white mb-4">Marketing</h3>
+          <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6">Vestibulum ante ipsum primis in
+            faucibus orci luctus.</p>
+          <a href="tel:17004445578" class="text-brand font-black text-xl hover:underline">1700 444 5578</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="py-32 bg-gray-50 dark:bg-dark-secondary relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-brand/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl">
+      </div>
+
+      <div class="max-w-[88%] mx-auto relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <div class="space-y-8">
+            <div class="space-y-4">
+              <span class="text-brand font-bold uppercase tracking-widest text-sm">Don't be a stranger!</span>
+              <h2 class="text-5xl md:text-6xl font-black dark:text-white leading-tight font-poppins">You tell
+                us.<br /><span class="text-brand">We listen.</span></h2>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400 text-lg leading-relaxed font-light">
+              Cras elementum finibus lacus nec lacinia. Quisque non convallis nisl, eu condimentum sem. Proin dignissim
+              libero lacus, ut eleifend magna vehicula et.
+            </p>
+            <div class="flex gap-6">
+              <a href="#"
+                class="w-12 h-12 flex items-center justify-center bg-white dark:bg-dark shadow-md hover:bg-brand hover:text-white rounded-xl transition-all text-gray-400">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#"
+                class="w-12 h-12 flex items-center justify-center bg-white dark:bg-dark shadow-md hover:bg-brand hover:text-white rounded-xl transition-all text-gray-400">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#"
+                class="w-12 h-12 flex items-center justify-center bg-white dark:bg-dark shadow-md hover:bg-brand hover:text-white rounded-xl transition-all text-gray-400">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-dark p-10 md:p-16 rounded-[3rem] shadow-2xl relative">
+            <form action="mailto:yourmail@example.com" method="post" enctype="text/plain" class="space-y-6">
+              <div class="space-y-2">
+                <input type="text" name="Name" placeholder="NAME *" required
+                  class="w-full px-0 py-4 border-b-2 border-gray-100 dark:border-gray-800 bg-transparent dark:text-white focus:outline-none focus:border-brand transition-all placeholder:text-gray-400 placeholder:font-light" />
+              </div>
+              <div class="space-y-2">
+                <input type="text" name="Subject" placeholder="SUBJECT *" required
+                  class="w-full px-0 py-4 border-b-2 border-gray-100 dark:border-gray-800 bg-transparent dark:text-white focus:outline-none focus:border-brand transition-all placeholder:text-gray-400 placeholder:font-light" />
+              </div>
+              <div class="space-y-2">
+                <input type="email" name="Email" placeholder="EMAIL *" required
+                  class="w-full px-0 py-4 border-b-2 border-gray-100 dark:border-gray-800 bg-transparent dark:text-white focus:outline-none focus:border-brand transition-all placeholder:text-gray-400 placeholder:font-light" />
+              </div>
+              <div class="space-y-2">
+                <textarea name="Message" placeholder="MESSAGE" rows="4"
+                  class="w-full px-0 py-4 border-b-2 border-gray-100 dark:border-gray-800 bg-transparent dark:text-white focus:outline-none focus:border-brand transition-all resize-none placeholder:text-gray-400 placeholder:font-light"></textarea>
+              </div>
+              <button type="submit"
+                class="w-full bg-brand hover:bg-brand-dark text-white font-black px-8 py-5 rounded-2xl transition-all shadow-lg hover:shadow-brand/40 uppercase tracking-widest text-sm">SEND
+                MESSAGE</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="footer"></div>
+  <script type="module" src="/js/pages/contactus.js"></script>
+</body>
+
+</html>
